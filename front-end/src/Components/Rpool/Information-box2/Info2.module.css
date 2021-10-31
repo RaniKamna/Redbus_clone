@@ -20,7 +20,7 @@
     flex-direction: column;
     padding: 0 0 3em;
 }
-.box2{
+.box2, .box3{
     background-color: #fff;
     padding: 2em;
     margin-bottom: 2em;
@@ -32,12 +32,6 @@
 }
 .para{
     font-size: 18px;
-}
-.box3{
-    background-color: #fff;
-    padding: 2em;
-    margin-bottom: 2em;
-    box-shadow: 0 2px 4px 0 hsl(0deg 4% 72% / 50%);
 }
 .twodiv{
     display: flex;
