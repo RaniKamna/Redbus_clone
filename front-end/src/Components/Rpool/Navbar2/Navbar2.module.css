@@ -1,0 +1,20 @@
+.main_container{
+    color: white;
+    background-color: #3e3e52;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 1.5em 7em;
+}
+.container{
+    display: inline-flex;
+    width: 100%;
+}
+.elem{
+    margin: auto;
+    text-align: left;
+    color: #fff;
+}
+.elem > a{
+    color: #fff;
+    text-decoration: none;
+}

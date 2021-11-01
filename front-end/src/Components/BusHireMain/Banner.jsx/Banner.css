@@ -1,0 +1,28 @@
+*{
+   box-sizing: border-box;
+}
+.MainBanner{
+    width: 100%;
+    height: 303px;
+    position: relative;
+}
+.BushireBanner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("https://www.redbus.in/bushire/static/webv2/home/group-3%20(4).svg");
+    background-size: 100%;
+}
+
+.BannerInner{
+    width: 958px;     
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

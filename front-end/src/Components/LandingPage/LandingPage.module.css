@@ -1,0 +1,76 @@
+
+.welcome_image {
+  height: 625px;
+  width:100%;
+  background-image: url("https://st.redbus.in/Images/HomeIndia/nataknew.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.1px solid #d84f57;
+}
+.total_form {
+  margin: 0px auto;
+  margin-top: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  width: 60%;
+}
+.total_form > div {
+  width: 100%;
+}
+
+
+.type_from > input,
+.type_to > input,
+.type_date > input {
+  width: 97%;
+  padding: 5px;
+  height:45px;
+  font-size: 20px;
+  font-family: sans-serif;
+ 
+}
+
+.type_search > button {
+  background-color: #d84f57;
+  color: white;
+ margin-left: 1%;
+  width: 97%;
+  padding: 5px;
+  height:60px;
+  font-size: 20px;
+  font-family:sans-serif;
+}
+.natak{
+  height: 25%;
+  width: 50%;
+  margin: 0, auto;
+  margin-top: 5%;
+  margin-left: 25%;
+  background-color: whitesmoke;
+  box-shadow:0 3px 7px 0 rgb(0 0 0 / 28%);
+}
+.natak>img{
+  width: 15%;
+  float: left;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+.prompt{
+  margin: 0 auto;
+  margin-left: 15%;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.prompt1{
+  font-size: 19px;
+    text-align: left;
+}
+.prompt2{
+    text-align: left;
+    color: #737373;
+    padding-top: 8px;
+}
+
+
+
