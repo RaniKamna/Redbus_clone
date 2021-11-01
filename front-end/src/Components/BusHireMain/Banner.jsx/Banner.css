@@ -26,3 +26,25 @@
     right: 0;
     margin: auto;
 }
+.BannerElements{
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://www.redbus.in/bushire/static/webv2/home/group-4.svg');
+}
+.BannerHeading{
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 32px;
+}
+.BannerSubHeading{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 8px;
+}
+.SvgElements{
+    margin-bottom: 31px;
+    width: 206px;
+    height: 89px;
+}
