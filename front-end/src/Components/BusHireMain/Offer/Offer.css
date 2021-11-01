@@ -1,0 +1,32 @@
+.Offer {
+  margin-top: 48px;
+  width: 462px;
+  margin-left: 275px;
+}
+.OffersHeading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #3e3e52;
+}
+.OfferButton {
+  display: flex;
+  flex-direction: row;
+  background: #38b87c;
+  border-radius: 5px;
+  padding: 10px;
+}
+.offergiff {
+  width: 32px;
+}
+.offergetupto {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-left: auto;
+  margin-top: 8px;
+}
+.arrowoffer {
+  margin-left: 21px;
+  width: 24px;
+}
