@@ -51,3 +51,14 @@
     width: 80%;
     line-height: 1.6;
 }
+.videodiv{
+    background: url('https://st.redbus.in/Images/rpools/web/rPool_youtube_thubnail.webp') 0 0 no-repeat;
+    background-size: cover;
+    height: 18em;
+    width: 600px;
+}
+.contentp{
+    width: 80%;
+    font-size: 16px;
+    line-height: 26px;
+}
