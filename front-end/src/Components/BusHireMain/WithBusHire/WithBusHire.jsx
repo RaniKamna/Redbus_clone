@@ -8,7 +8,7 @@ export const WithBusHire=()=>{
             With Bus Hire you get
           </div>
           <div>
-            <iframe src="https://www.youtube.com/embed/4mezaRyMnd8?enablejsapi=1&mute=1" width="463" height="295" frameborder="0"></iframe>
+            <iframe className={Styles.iframeHirebus} src="https://www.youtube.com/embed/4mezaRyMnd8?enablejsapi=1&mute=1" width="463" height="259" frameborder="0" border></iframe>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", width: " 50%" }}>
             <div className={Styles.BusHireFeatures}>
