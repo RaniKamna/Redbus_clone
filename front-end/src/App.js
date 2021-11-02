@@ -1,4 +1,5 @@
 import './App.css';
+import { Route, Switch } from 'react-router-dom'
 import { LandingPage } from "./Components/LandingPage/LandingPage.jsx";
 import { Nav1 } from './Components/Rpool/Navbar1/Navbar1';
 import { Nav2 } from './Components/Rpool/Navbar2/Navbar2';
@@ -10,16 +11,21 @@ import { Bushire } from './Components/BusHireMain/BusHire'
 function App() {
   return (
     <div>
-      <LandingPage />
-      {/* <Nav1 />
-      <Bannerbox />
-      <Nav2 />
-      <Info1 />
-      <Info2 /> */}
-      {/* <LandingPage/>
-     <Nav2 />
-     <Info2 /> */}
-      {/* <Bushire /> */}
+      <Switch>
+        <Route path='/' exact>
+          <LandingPage />
+        </Route>
+        <Route path='/rpool' exact>
+          <Nav1 />
+          <Bannerbox />
+          <Nav2 />
+          <Info1 />
+          <Info2 />
+        </Route>
+        <Route path='/bushire' exact>
+          <Bushire />
+        </Route>
+      </Switch>
     </div>
   );
 }
