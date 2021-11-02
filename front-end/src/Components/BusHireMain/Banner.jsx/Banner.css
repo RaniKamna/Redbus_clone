@@ -47,4 +47,33 @@
     margin-bottom: 31px;
     width: 206px;
     height: 89px;
+    animation:ease-in-out;
+    
 }
+.SvgElements>img {
+    animation: ride 5s infinite;
+    transform: translate3D(500%,0,0);
+    &__wheels {
+      animation: bump 0.5s infinite;
+    }
+  }
+  @keyframes ride {
+    0% {
+      transform: translate3D(100%,0,0);
+    }
+    100% {
+      transform: translate3D(-20%,0,0);
+    }
+  }
+  @keyframes bump {
+    0% {
+      transform: translate3D(0,0 ,0);
+    }
+    50% {
+      transform: translate3D(0,1px ,0);
+    }
+    100% {
+      transform: translate3D(0,0 ,0);
+    }
+  }
+
