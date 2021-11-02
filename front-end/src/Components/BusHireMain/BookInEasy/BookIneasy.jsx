@@ -7,7 +7,7 @@ export const BookIneasy = () => {
       <div className={Styles.bookInEaschStep}>
    
         <div>
-          <img
+          <img 
             src="https://www.redbus.in/bushire/static/mwebv2/home/1%20(1).svg"
             alt="1"
           />

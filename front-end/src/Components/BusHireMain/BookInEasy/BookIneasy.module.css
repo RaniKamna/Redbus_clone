@@ -10,6 +10,7 @@
   font-size: 24px;
   font-weight: 800;
   color: #3e3e52;
+  margin-bottom: 20px;
 }
 .bookInEaschStep {
   margin-top: 2%;
@@ -29,7 +30,7 @@
 }
 .BusHireFeatures {
   background-color: #3e3e52;
-  width: 219px;
+  width: 213px;
   height: 214px;
   border-radius: 8px;
   border: 2px solid #ddd;
@@ -51,4 +52,16 @@
   font-weight: 900;
   color: #3e3e52;
   margin-top: 10px;
+}
+.iframeHirebus{
+     border-radius: 8px;
+     width: 463px;
+     height: 259px;
+     margin-bottom: 24px;
+}
+.whyBookWithBushire_insideFeature_text > h3 {
+
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
 }
