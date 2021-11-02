@@ -8,7 +8,7 @@ export const Info2 = () => {
                     <div className={styles.box1}>
                         <div className={styles.bx1div1}>
                             <h2 className={styles.heading1}>What is rPool</h2>
-                            <div>
+                            <div className={styles.contentp}>
                                 <p> rPool is an eco-smart option for handling all your travel needs by connecting
                                     you with fellow professional riders. As our cities are growing, increased traffic
                                     adds to the chaos and pollution. Hence, we have committed to providing a convenient,
@@ -16,7 +16,11 @@ export const Info2 = () => {
                             </div>
                         </div>
                         <div>
-                            <div className={styles.youtubebox}></div>
+                            <div className={styles.youtubebox}>
+                                <div className={styles.videodiv}>
+                                <iframe frameborder="0" title="youtube_video" width="600" height="280" allowfullscreen="" src="https://www.youtube.com/embed/GIZlD2b2bn8?rel=0"></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.box2}>

@@ -9,12 +9,12 @@ export const Bannerbox = () => {
                         <div className={styles.div1}>
                             <div className={styles.imagediv}>
                                 <div className={styles.subhead}>Commuting within the city?</div>
-                                <img src="https://st.redbus.in/Images/rpools/rPoolIntracity.svg"></img>
+                                <img alt='' src="https://st.redbus.in/Images/rpools/rPoolIntracity.svg"></img>
                             </div>
                             <div className={styles.div2}>
                                 <div className={styles.greenbox}>Introducing Outstation</div>
                                 <div className={styles.subhead}>Travelling out of town?</div>
-                                <img src="https://st.redbus.in/Images/rpools/rPoolOutstation.svg"></img>
+                                <img alt='' src="https://st.redbus.in/Images/rpools/rPoolOutstation.svg"></img>
                             </div>
                         </div>
                     </div>
@@ -31,12 +31,12 @@ export const Bannerbox = () => {
                         </div>
                         <div className={styles.googlebtn}>
                             <div>
-                                <a href="" target='_blank'>
+                                <a href="#" target='_blank'>
                                     <img className={styles.imgbtn} alt="" src="	https://www.redbus.in/r-pool/images/googleplay.svg" />
                                 </a>
                             </div>
                             <div style={{ marginTop: '0.5em' }}>
-                                <a href="" target='_blank'>
+                                <a href="#" target='_blank'>
                                     <img className={styles.imgbtn} alt="" src="https://www.redbus.in/r-pool/images/ic_appstore.svg" />
                                 </a>
                             </div>
