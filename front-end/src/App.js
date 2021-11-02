@@ -11,15 +11,15 @@ function App() {
   return (
     <div>
       <LandingPage />
-      <Nav1 />
+      {/* <Nav1 />
       <Bannerbox />
       <Nav2 />
       <Info1 />
-      <Info2 />
+      <Info2 /> */}
       {/* <LandingPage/>
      <Nav2 />
      <Info2 /> */}
-      <Bushire />
+      {/* <Bushire /> */}
     </div>
   );
 }
