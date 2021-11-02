@@ -1,4 +1,5 @@
 import styles from './Navbar1.module.css';
+import { Link } from 'react-router-dom'
 
 export const Nav1 = () => {
     return (
@@ -10,13 +11,16 @@ export const Nav1 = () => {
                         <nav>
                             <ul className={styles.menuul}>
                                 <li className={styles.navli}>
-                                    <a href="">BUS TICKETS</a>
+                                    <Link to='/'>BUS TICKETS </Link>
+                                    {/* <a href="">BUS TICKETS</a> */}
                                 </li>
                                 <li className={styles.rpool}>
-                                    <a href="">rPool</a>
+                                    <Link to='/rpool'>rPool </Link>
+                                    {/* <a href="">rPool</a> */}
                                 </li>
                                 <li className={styles.navli}>
-                                    <a href="">BUS HIRE</a>
+                                    <Link to='/bushire'>BUS HIRE</Link>
+                                    {/* <a href="">BUS HIRE</a> */}
                                 </li>
                             </ul>
                         </nav>

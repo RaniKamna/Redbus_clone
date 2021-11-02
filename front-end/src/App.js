@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Link } from 'react-router-dom'
 import { LandingPage } from "./Components/LandingPage/LandingPage.jsx";
 import { Nav1 } from './Components/Rpool/Navbar1/Navbar1';
 import { Nav2 } from './Components/Rpool/Navbar2/Navbar2';
@@ -11,6 +11,9 @@ import { Bushire } from './Components/BusHireMain/BusHire'
 function App() {
   return (
     <div>
+      <Link to='/'>Home </Link>
+      <Link to='/rpool'>rPool </Link>
+      <Link to='/bushire'>BusHire</Link>
       <Switch>
         <Route path='/' exact>
           <LandingPage />
