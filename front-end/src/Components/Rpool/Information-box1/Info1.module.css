@@ -16,7 +16,7 @@
     margin: 0;
 }
 .toglbtn{
-    width: 14.5em;
+    width: 14.2em;
     height: 2.7em;
     border-radius: 3em;
     border: 1px solid #bbc0cd;
@@ -62,7 +62,16 @@
 .numbersel{
     border: 2px solid #38b87c;
     background: #38b87c;
+    border-radius: 50%;
+    width: 35px;
+    height: 34px;
+    padding-top: 3px;
     color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-right: 10px;
 }
 .number{
     border-radius: 50%;

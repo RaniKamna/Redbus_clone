@@ -12,13 +12,14 @@ export const Info2 = () => {
                                 <p> rPool is an eco-smart option for handling all your travel needs by connecting
                                     you with fellow professional riders. As our cities are growing, increased traffic
                                     adds to the chaos and pollution. Hence, we have committed to providing a convenient,
-                                    economical and sustainable solution to this problem through carpooling and bike pooling.</p>
+                                    economical and sustainable solution to this problem through carpooling and bike pooling.
+                                </p>
                             </div>
                         </div>
                         <div>
                             <div className={styles.youtubebox}>
                                 <div className={styles.videodiv}>
-                                <iframe frameborder="0" title="youtube_video" width="600" height="280" allowfullscreen="" src="https://www.youtube.com/embed/GIZlD2b2bn8?rel=0"></iframe>
+                                    <iframe frameBorder="0" title="youtube_video" width="600" height="290" src="https://www.youtube.com/embed/GIZlD2b2bn8?rel=0"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -28,14 +29,16 @@ export const Info2 = () => {
                         <div className={styles.para}>
                             <p>Ridesharing is the best option for socially responsible citizens to commute within the city.
                                 Optimizing every ride, rPool makes it easy to find fellow riders on your route and split your
-                                commute costs.</p>
+                                commute costs.
+                            </p>
                         </div>
                     </div>
                     <div className={styles.box3}>
                         <div className={styles.heading}>Rpool outside your city</div>
                         <div className={styles.para}>
                             <p>Now, carpool/bikepool to destinations outside your city too! We are going the distance for you
-                                with outstation ridesharing on rPool.</p>
+                                with outstation ridesharing on rPool.
+                            </p>
                         </div>
                         <div className={styles.twodiv}>
                             <div className={styles.twodiv1}>
@@ -46,7 +49,8 @@ export const Info2 = () => {
                                 <div className={styles.div1para}>
                                     <p>With multiple safety features including the rPool Shield,
                                         Live Tracking and SOS Button, it is certainly safe to travel
-                                        outside your city using rPool!</p>
+                                        outside your city using rPool!
+                                    </p>
                                 </div>
                             </div>
                             <div className={styles.twodiv1}>
