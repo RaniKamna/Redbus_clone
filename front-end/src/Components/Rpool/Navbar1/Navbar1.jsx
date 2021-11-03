@@ -6,7 +6,7 @@ export const Nav1 = () => {
         <>
             <div className={styles.main_container}>
                 <div className={styles.container}>
-                    <a href="" className={styles.redbuslogo}>redbus</a>
+                    <a href="/" className={styles.redbuslogo}>redbus</a>
                     <div className={styles.menu}>
                         <nav>
                             <ul className={styles.menuul}>

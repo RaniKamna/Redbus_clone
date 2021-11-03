@@ -56,9 +56,16 @@
     background-size: cover;
     height: 18em;
     width: 600px;
+    border-radius: 8px;
+}
+p{
+    text-align: left;
 }
 .contentp{
     width: 80%;
     font-size: 16px;
     line-height: 26px;
+}
+iframe{
+    border-radius: 8px;
 }
