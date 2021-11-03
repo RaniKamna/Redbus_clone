@@ -1,0 +1,20 @@
+.div{
+    width: 350px;
+    height: 245px;
+    background-color: white;
+    margin: 2%;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+           transition: transform .2s
+}
+.div img{
+    height: 130px;
+    margin-left: 12%;
+}
+.div p{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.div:hover{
+      transform: scale(1.1);
+}

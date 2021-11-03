@@ -15,11 +15,11 @@ function App() {
       <Bannerbox />
       <Nav2 />
       <Info1 />
-      <Info2 /> */}
-      {/* <LandingPage/>
+      <Info2 />
+      <LandingPage/>
      <Nav2 />
-     <Info2 /> */}
-      {/* <Bushire /> */}
+     <Info2 /> 
+       <Bushire /> */}
     </div>
   );
 }
