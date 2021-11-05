@@ -18,6 +18,7 @@ function App() {
 
       <Switch>
         <Route path='/' exact>
+        {/* <Nav1 /> */}
           <LandingPage />
         </Route>
         <Route path='/rpool' exact>
