@@ -1,0 +1,67 @@
+.bookInEasyStepsdiv,
+.withBusHireYouCanGet,
+.VehicleYouCanGet,
+.whyBookWithBushire {
+  margin: 3% 18%;
+  display: flex;
+  flex-direction: column;
+}
+.bookInEasySteps_heading {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3e3e52;
+  margin-bottom: 20px;
+}
+.bookInEaschStep {
+  margin-top: 2%;
+  border-radius: 8px;
+  background-color: #f9ecf2;
+  width: 49%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+}
+.bookInEaschStepText {
+  font-size: 22px;
+  color: #3e3e52;
+  margin-left: 20px;
+}
+.BusHireFeatures {
+  background-color: #3e3e52;
+  width: 213px;
+  height: 214px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  box-sizing: border-box;
+}
+.BusHireEachFeature {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 15%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.BusHireEachFeatureText {
+  font-size: 16px;
+  font-weight: 900;
+  color: #3e3e52;
+  margin-top: 10px;
+}
+.iframeHirebus{
+     border-radius: 8px;
+     width: 463px;
+     height: 259px;
+     margin-bottom: 24px;
+}
+.whyBookWithBushire_insideFeature_text > h3 {
+
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}

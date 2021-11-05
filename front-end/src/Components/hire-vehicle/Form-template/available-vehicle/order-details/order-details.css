@@ -1,0 +1,31 @@
+.address {
+    /* border: 0.5px solid black; */
+    /* font-size: 23px; */
+    text-align: center;
+    padding: 2px;
+    border-left: 1px solid black;
+
+}
+.time-from, .time-till, .pass-number {
+    /* border: 1px solid black; */
+    /* font-size: 23px; */
+    text-align: center;
+    padding: 2px;
+    border-left: 1px solid black;
+}
+
+.modify-btn {
+    width: 100px;
+    font-size: 23px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.modify-btn-container {
+    border-left: 1px solid black;
+}
+.o {
+    text-decoration: none;
+}

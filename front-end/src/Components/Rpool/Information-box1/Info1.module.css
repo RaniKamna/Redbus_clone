@@ -1,0 +1,157 @@
+.container{
+    padding: 60px 110px;
+}
+.mainbox{
+    background-image: url('https://s2.rdbuz.com/rbpool/how_it_works/screens/bc_img_find_active.png');
+    min-height: 550px;
+    padding-left: 350px;
+    margin-left: 30px;
+    padding-top: 35px;
+    background-repeat: no-repeat;
+}
+.heading{
+    font-size: 32px;
+    font-weight: 700;
+    color: #3e3e52;
+    margin: 0;
+}
+.toglbtn{
+    width: 14.2em;
+    height: 2.7em;
+    border-radius: 3em;
+    border: 1px solid #bbc0cd;
+    background-color: #fff;
+    margin: 30px 0 60px;
+}
+.toglbtn > span{
+    display: inline-block;
+    padding-top: 0.6em;
+    height: 2.6em;
+    width: 7em;
+    text-align: center;
+    cursor: pointer;
+}
+.find{
+    background-color: #3e3e52;
+    border-radius: 28px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 21%);
+    font-weight: 700;
+    color: #fff;
+}
+.offer{
+    float: right;
+}
+.tabsel{
+    width: 95%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.selected{
+    background-color: #fff;
+    color: #38b87c;
+    border-bottom: 3px solid #38b87c;
+}
+.activate{
+    display: inline-block;
+    height: 70px;
+    width: 24%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bbc0cd;
+    cursor: pointer;
+}
+.numbersel{
+    border: 2px solid #38b87c;
+    background: #38b87c;
+    border-radius: 50%;
+    width: 35px;
+    height: 34px;
+    padding-top: 3px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-right: 10px;
+}
+.number{
+    border-radius: 50%;
+    width: 35px;
+    height: 34px;
+    padding-top: 3px;
+    background: #fff;
+    border: 2px solid #3e3e52;
+    background-color: #3e3e52;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-right: 10px;
+}
+.text{
+    line-height: 22px;
+    float: left;
+    width: 5em;
+}
+.textsel{
+    background-color: #fff;
+    color: #38b87c;
+}
+.text > span{
+    display: block;
+    font-size: 16px;
+}
+.txt{
+    line-height: 22px;
+    color: #3e3e52;
+    float: left;
+}
+.content{
+    overflow: hidden;
+}
+.divs{
+    margin: 0 0 40px;
+}
+.ultab{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.litab{
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    min-height: 45px;
+    display: flex;
+}
+.dot{
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #38b87c;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+.litext{
+    float: left;
+    color: #3e3e52;
+    width: 310px;
+}
+.rsimg{
+    background: #fff url('https://s2.rdbuz.com/rbpool//how_it_works/img_rewards.svg') 0 0 no-repeat;
+    width: 770px;
+    height: 57px;
+    border-radius: 4px;
+    font-size: 19px;
+    padding-left: 28px;
+}
+.divcontent{
+    border: 1px dotted #7e7e8c;
+    padding: 15px 0 15px 60px;
+    border-width: 1px 1px 1px 0;
+    border-radius: 6px;
+    margin-top: 1em;
+    color: #3e3e52;
+    width: 81%;
+}

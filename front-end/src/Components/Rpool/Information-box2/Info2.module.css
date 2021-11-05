@@ -1,0 +1,71 @@
+.container{
+    background: #f7f7f7;
+    min-height: 231px;
+    padding: 60px 110px;
+}
+.box1{
+    display: inline-flex;
+}
+.heading1{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #3e3e52;
+}
+.youtubebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    flex-direction: column;
+    padding: 0 0 3em;
+}
+.box2, .box3{
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 4px 0 hsl(0deg 4% 72% / 50%);
+}
+.heading{
+    font-size: 24px;
+    font-weight: 700;
+}
+.para{
+    font-size: 18px;
+}
+.twodiv{
+    display: flex;
+    margin: 1em 0;
+}
+.twodiv1{
+    padding: 1.5em 1em 0 0;
+    flex: 1;
+}
+.div1head{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+.div1para{
+    font-size: 16px;
+    width: 80%;
+    line-height: 1.6;
+}
+.videodiv{
+    background: url('https://st.redbus.in/Images/rpools/web/rPool_youtube_thubnail.webp') 0 0 no-repeat;
+    background-size: cover;
+    height: 18em;
+    width: 600px;
+    border-radius: 8px;
+}
+p{
+    text-align: left;
+}
+.contentp{
+    width: 80%;
+    font-size: 16px;
+    line-height: 26px;
+}
+iframe{
+    border-radius: 8px;
+}

@@ -1,0 +1,128 @@
+.vehicle-heading { 
+    /* width: 100%; */
+    height: 50px;
+    position: -webkit-sticky;
+  position: sticky;
+}
+.arrow { 
+    width: 20px;
+    height: 10px;
+    margin-top: 20px;
+}
+.Outstation {
+    font-size: 19px;
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+
+.form-container { 
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows:60% 40% 20%;
+    grid-gap: 10px;
+    /* border: 1px solid black; */
+}
+.container {
+    display: grid;
+    grid-template-rows : 30% 36% 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgb(201, 162, 162);
+
+}
+.pickup, .dest, .return { 
+    font-weight: bold;
+    margin-top: 20px;
+}
+.pick-input, .dest-input, .return-input, .passenger-input { 
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    /* outline: 0.3px solid black; */
+}
+.dest-label { 
+    margin-top: 10px;
+}
+
+.time-container { 
+    display: grid;
+    height: 90px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgb(201, 162, 162);
+    
+    grid-template-columns: 50% 50%;
+}
+
+.form-when-label, .till-when-label, .passenger-label {
+    font-weight: bold;
+}
+.form-when-input, .till-when-input {
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+}
+.passenger-container {
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    height: 90px;
+    margin-top: -60px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgb(201, 162, 162);
+    
+}
+.message { 
+    background-color: gray;
+    margin-top: -6px;
+    width: 300px;
+}
+
+
+.btn {
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+    background-color: #d84e55;
+
+}
+.submitbtn {
+    width: 100%;
+    height: 50px;
+    background-color: #d84e55;
+
+}
+/* .contact-for {
+    width: 100%;
+    /* border: 1px solid black; */
+    
+    /* height: 0px; */
+    /* margin-top: -60px; */
+  /*  background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px rgb(201, 162, 162);
+} */
+.b {
+    display: block;
+    height: 190px;
+
+}
+.contact-container {
+    width: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 33% 33% 33%;
+}
+/* .text {
+    color : white;
+    font-weight: bolder;
+    font-size: 20px;
+} */

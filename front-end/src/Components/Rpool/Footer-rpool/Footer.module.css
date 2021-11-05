@@ -1,0 +1,40 @@
+.mainbox{
+    padding: 3em 7em;
+    display: flex;
+    background: #1a2230;
+    color: #fff;
+}
+.div1{
+    width: 70%;
+    display: flex;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.heading{
+    font-weight: 700;
+    color: #797979;
+}
+.div1 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.listt{
+    color: #d7d7d7;
+    font-size: 14px;
+    line-height: 2;
+}
+.div2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.ftext{
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+}

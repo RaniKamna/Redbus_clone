@@ -1,0 +1,54 @@
+.main_container{
+    padding: 4em 7em;
+    background-color: #f7f7f7;
+}
+.div1{
+    background-image: url('https://st.redbus.in/Images/rpools/rwa.svg');
+    background-size: 23em;
+    line-height: 1.6;
+    padding-bottom: 1em;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.container{
+    width: 65%;
+}
+.div2{
+    font-size: 18px;
+    line-height: 30px;
+}
+.text{
+    display: inline-flex;
+    margin: 1em 0;
+}
+.num{
+    width: 30px;
+    height: fit-content;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 700;
+    background-color: #e5ebf8;
+    border: none;
+}
+.div3{
+    font-size: 18px;
+    line-height: 30px;
+}
+.ultext{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.listitem{
+    list-style: none;
+    background: url('https://st.redbus.in/Images/rpools/roundTick.svg') no-repeat;
+    padding: 0 3em;
+    width: 40%;
+    margin: 1em 0;
+}
+.container > p{
+    font-size: 18px;
+    font-weight: 300;
+}

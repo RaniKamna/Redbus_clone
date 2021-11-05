@@ -1,0 +1,61 @@
+.containera {
+    width: 260px;
+    border : 0px solid black;
+    border-radius: 10px;
+    display: grid;
+    padding: 0px;
+    grid-template-rows: 30% 80%;
+    box-shadow: 1px 2px 3px rgb(201, 162, 162);
+
+}
+
+.image-container {
+    height: 100%;
+    /* width */
+    align-items: center;
+    background-color: #e7e7e7;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+.img {
+    
+
+    width: 80%;
+    align-items: center;
+    margin-left:25px;
+    height: 100%;
+}
+.details {
+    padding: 14px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: -6px;
+
+}
+.starting_price {
+    margin-top: -10px;
+}
+.starting_price > span {
+    font-weight: bolder;
+    color: red;
+}
+.city > span {
+    font-weight: bolder;
+}
+.driver_bata {
+    margin-top: -10px;
+}
+.btn_price {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #d84e55;
+    font-weight: bolder;
+    border: 0px;
+}

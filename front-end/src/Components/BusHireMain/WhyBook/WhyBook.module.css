@@ -1,0 +1,68 @@
+.whyBookWithBushire {
+  margin: 3% 18%;
+  display: flex;
+  flex-direction: column;
+}
+.bookInEasySteps_heading {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3e3e52;
+  margin-bottom: 20px;
+}
+
+.whyBookWithBushire_firstFeature {
+    width: 462px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background: url("https://www.redbus.in/bushire/static/mwebv2/home/group%20(1).svg");
+    background-size: cover;
+    margin: 20px 0px;
+    transition: transform .3s ease;
+  }
+ 
+
+  .whyBookWithBushire_secondFeature {
+    width: 462px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background: url("https://www.redbus.in/bushire/static/mwebv2/home/group-2%20(1).svg");
+    background-size: cover;
+    margin: 20px 0px;
+  }
+  .whyBookWithBushire_thirdFeature {
+    width: 462px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background: url("https://www.redbus.in/bushire/static/mwebv2/home/group%20(2).svg");
+    background-size: cover;
+    margin: 20px 0px;
+    padding: 20px;
+  }
+  .whyBookWithBushire_insideFeature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 20px;
+  }
+  .whyBookWithBushire_insideFeature_text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin-top: 20px;
+  }
+  .whyBookWithBushire_insideFeature_text > h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin: 0px;
+  }

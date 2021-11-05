@@ -1,0 +1,84 @@
+.main_container{
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ultext{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.listitem1{
+    background: url('https://s2.rdbuz.com/rbpool/why_redbus_rpool/bc_img_insurance.svg') 0 0 no-repeat;
+    background-position-y: 40%;
+    margin-top: 40px;
+    width: 40%;
+    padding: 0 0 0 150px;
+    min-height: 140px;
+    margin-right: 100px;
+    line-height: 20px;
+    float: left;
+}
+.listitem2{
+    background: url('https://s2.rdbuz.com/rbpool/why_redbus_rpool/img_privacy.svg') 0 0 no-repeat;
+    background-position-y: 40%;
+    margin-top: 40px;
+    width: 40%;
+    padding: 0 0 0 150px;
+    min-height: 140px;
+    margin-right: 100px;
+    line-height: 20px;
+    float: left;
+}
+.listitem3{
+    background: url('https://s2.rdbuz.com/rbpool/why_redbus_rpool/img_savings.svg') 0 0 no-repeat;
+    background-position-y: 40%;
+    margin-top: 40px;
+    width: 40%;
+    padding: 0 0 0 150px;
+    min-height: 140px;
+    margin-right: 100px;
+    line-height: 20px;
+    float: left;
+}
+.listitem4{
+    background: url('https://s2.rdbuz.com/rbpool/why_redbus_rpool/bc_img_friends.svg') 0 0 no-repeat;
+    background-position-y: 40%;
+    margin-top: 40px;
+    width: 40%;
+    padding: 0 0 0 150px;
+    min-height: 140px;
+    margin-right: 100px;
+    line-height: 20px;
+    float: left;
+}
+.listitem5{
+    background: url('https://s2.rdbuz.com/rbpool/why_redbus_rpool/img_no_transaction_charge.svg') 0 0 no-repeat;
+    background-position-y: 40%;
+    margin-top: 40px;
+    width: 40%;
+    padding: 0 0 0 150px;
+    min-height: 140px;
+    margin-right: 100px;
+    line-height: 20px;
+    float: left;
+}
+.subhead{
+    font-size: 18px;
+    font-weight: 700;
+    color: #3e3e52;
+}
+.subtext{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #3e3e52;
+}

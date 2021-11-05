@@ -1,0 +1,64 @@
+.journey-type-container {
+    width: 390px;
+    height: 600px;
+    padding: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 20% 33% 33% 33%;
+    grid-gap: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #f8f4f4;
+}
+/* .position-fixed {
+    margin-left: 1000px;
+    margin-top: -1000px;
+    /* position: fixed; 
+} */
+
+
+
+.journey-text {
+    font-size: 20px;
+
+}
+
+
+
+.know-more {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    /* border : 1px solid black; */
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgb(201, 162, 162);
+
+
+}
+.know-more:hover {
+    border: 1px solid blue;
+}
+.know-more > h1 {
+    font-size: 15px;
+}
+.know-more > p {
+    font-size: 12px;
+    color: gray;
+}
+.know-more > a {
+    margin-left: 250px;
+    text-decoration: none;
+}
+
+.vehicle-heading {
+    width: 410px;
+    height: 40px;
+    /* padding: 3px; */
+    background-color: #d84e55;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.text {
+    text-decoration: none;
+}
