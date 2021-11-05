@@ -3,8 +3,10 @@ import { Route, Switch, Link } from 'react-router-dom'
 import { LandingPage } from "./Components/LandingPage/LandingPage.jsx";
 import { Rpool } from './Components/Rpool/Rpool';
 import { Bushire } from './Components/BusHireMain/BusHire'
+
 import {Hire} from "./Components/hire-vehicle/Hire-vehicle";
 import {Form} from "./Components/hire-vehicle/Form-template/Form-template";
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         </Route>
         <Route path='/bushire' exact>
           <Bushire />
+
           {/* <Hire /> */}
         </Route>
         <Route path = "/outstation" exact>
@@ -41,6 +44,8 @@ function App() {
         </Route>
       </Switch>
       <Hire className = "place"  />
+
+
     </div>
   );
 }

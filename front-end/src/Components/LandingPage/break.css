@@ -1,3 +1,4 @@
+
 .div{
     width: 350px;
     height: 245px;
@@ -17,4 +18,5 @@
 }
 .div:hover{
       transform: scale(1.1);
+
 }
