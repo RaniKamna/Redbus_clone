@@ -482,7 +482,7 @@ grid-gap: 0.5%;
 }
 
 .name {
-  height: 250px;
+  height: 270px;
   margin: auto;
   width: 100%;
 }
@@ -500,11 +500,11 @@ grid-gap: 0.5%;
   display: grid;
   grid-template-columns: 20% 20% 20%;
   grid-gap: 5%;
-  margin-left: 23%;
-  margin-top: 2%;
+  margin-left: 27%;
+  margin-top: 3%;
   text-align: center;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 15px;
   color: #737373;
 }
 

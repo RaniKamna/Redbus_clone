@@ -15,7 +15,6 @@ state ={
   render(){
     const {items} =this.state;
     const breakPoints = [
-  { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 1 },
   { width: 768, itemsToShow: 2 },
   { width: 1024, itemsToShow: 3 },
