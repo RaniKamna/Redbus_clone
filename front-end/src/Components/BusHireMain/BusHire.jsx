@@ -11,7 +11,7 @@ import {Docs} from './HireDocs/Docs'
 
 export const Bushire=()=>{
     return(
-        <div>
+        <div >
             <Banner/>
             <BookIneasy/>
             <Offer/>
