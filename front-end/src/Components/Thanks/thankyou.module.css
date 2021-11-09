@@ -1,0 +1,125 @@
+.container{
+    padding: 1em 7em;
+    background: whitesmoke;
+    height: 740px;
+}
+.msg{
+    padding: 1px 0px;
+    background: #f3e883;
+}
+.msg > p{
+    text-align: center;
+}
+.divs{
+    display: flex;
+    padding: 1em 2em;
+    gap: 2.5%;
+}
+.div1{
+    width: 70%;
+}
+.div12{
+    background: white;
+    padding: 1% 2.5%;
+    border-radius: 4px;
+    box-shadow: 0 0px 4px 0 #4e454533, 0 0px 0px 0 #58515130;
+}
+.div13{
+    background: white;
+    box-shadow: 0 0px 4px 0 #4e454533, 0 0px 0px 0 #58515130;
+    padding: 1%;
+    border-radius: 4px;
+    margin-top: 2%;
+}
+.div13 > h3, .div13 > p{
+    text-align: center;
+}
+.div123{
+    display: flex;
+    gap: 2%;
+}
+.div1234{
+    gap: 2%;
+    display: flex;
+}
+.div1234 > div{
+    width: 25%;
+}
+.div2{
+    width: 25%;
+}
+.datebx{
+    width: 20%;
+}
+.datebx > p{
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.addbx{
+    width: 26%;
+    padding: 1%;
+}
+.tokenbx, .tokenbx > p{
+    width: 60%;
+    text-align: right;
+    padding: 1%;
+}
+.tokenbx > p{
+    width: 100%;
+}
+.date{
+    font-size: 55px;
+    color: red;
+}
+.cnfrm{
+    background: black;
+    color: white;
+    padding: 4%;
+    width: 76%;
+}
+.div1234 > div > h3{
+    margin-bottom: 4px;
+    margin-top: 1px;
+}
+.div1234 > div > p{
+    margin-bottom: 3px;
+}
+.tokenbx h4{
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.div2> div{
+    padding: 2% 5%;
+    background: white;
+    box-shadow: 0 0px 4px 0 #4e454533, 0 0px 0px 0 #58515130;
+    border-radius: 4px;
+}
+.sml2, .sml3{
+    margin-top: 4%;
+}
+.inpbx{
+    height: 30px;
+    width: 65%;
+    outline: none;
+}
+.inpdiv{
+    display: flex;
+    gap: 13%;
+}
+.book{
+    padding: 1% 5%;
+    background: red;
+    color: white;
+    border: none;
+}
+.sml2 > div > h4{
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+.sml2 > div{
+    padding: 5%;
+}
+.sml1{
+    height: 150px;
+}

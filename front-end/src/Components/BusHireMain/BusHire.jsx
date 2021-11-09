@@ -6,10 +6,12 @@ import { VechileType } from "./Vechicle type/VechicleType"
 import { WhyBook } from "./WhyBook/WhyBook"
 import { WithBusHire } from "./WithBusHire/WithBusHire"
 import { Operates } from "./BusOperates/BusOperates"
-
+import FaqSection from "./FAQ/FAQ"
+import { Docs } from "./HireDocs/Docs"
+ 
 export const Bushire=()=>{
     return(
-        <div>
+        <div >
             <Banner/>
             <BookIneasy/>
             <Offer/>
@@ -18,6 +20,8 @@ export const Bushire=()=>{
             <VechileType/>
             <WhyBook/>
             <Operates/>
+            <FaqSection/>
+            <Docs/>
         </div>
     )
 }

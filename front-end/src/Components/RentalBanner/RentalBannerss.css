@@ -1,0 +1,69 @@
+*{
+   box-sizing: border-box;
+}
+.MainBanner{
+    width: 100%;
+    height: 303px;
+    position: relative;
+}
+.BushireBanner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("https://www.redbus.in/bushire/static/webv2/home/group-3%20(4).svg");
+    background-size: 100%;
+}
+
+.BannerInner{
+    width: 958px;     
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.BannerElements{
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://www.redbus.in/bushire/static/webv2/home/group-4.svg');
+}
+.BannerHeading{
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 32px;
+}
+.BannerSubHeading{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 8px;
+}
+.RentalBanner{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.RentalBanner>div>button{
+    padding: 13px 30px;
+    font-size: 16px;
+    background-color: #d84e55;
+    color: #ffff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 22.08px;
+    letter-spacing: 1.5px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: default !important;
+    border: none;
+    border-radius: 5px;
+
+}
+
+

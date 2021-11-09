@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import axios from "axios";
 import {bus} from "./util/request";
 
-import {Show} from "./show-vehicle/Show-vehicle";
+// import {Show} from "./show-vehicle/Show-vehicle";
 
 
 const Vehicle = () => {
@@ -27,7 +27,7 @@ const Vehicle = () => {
     
     return (
         <div>
-            <Show data = {obj} />
+            {/* <Show data = {obj} /> */}
         </div>
     )
 }

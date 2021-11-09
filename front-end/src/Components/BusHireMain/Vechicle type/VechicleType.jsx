@@ -1,10 +1,12 @@
 import Styles from './VechicleType.module.css'
 import  "../BookInEasy/BookIneasy.module.css";
+import {Link} from "react-router-dom";
 
 export const VechileType=()=>{
     return(
         <div className={Styles.VehicleYouCanGet}>
   <div className={Styles.bookInEasySteps_heading}>Vehicle Types</div>
+  <Link to = "/bus">
   <div className={Styles.vehicleTypeImage}>
     <img
       src="https://www.redbus.in/bushire/static/webv2/home/group%20(10).svg"
@@ -18,6 +20,8 @@ export const VechileType=()=>{
       </p>
     </div>
   </div>
+  </Link>
+  <Link to = "/tempo">
   <div className={Styles.vehicleTypeImage}>
     <img
       src="https://www.redbus.in/bushire/static/webv2/home/group%20(11).svg"
@@ -32,6 +36,8 @@ export const VechileType=()=>{
       </p>
     </div>
   </div>
+  </Link>
+  <Link to = "/car">
   <div className={Styles.vehicleTypeImage}>
     <img
       src="https://www.redbus.in/bushire/static/webv2/home/group%20(12).svg"
@@ -45,6 +51,7 @@ export const VechileType=()=>{
       </p>
     </div>
   </div>
+  </Link>
 </div>
 
     )
