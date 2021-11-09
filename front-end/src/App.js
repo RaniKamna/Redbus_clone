@@ -6,6 +6,7 @@ import { Bushire } from './Components/BusHireMain/BusHire'
 
 import {Hire} from "./Components/hire-vehicle/Hire-vehicle";
 import {Form} from "./Components/hire-vehicle/Form-template/Form-template";
+import {Thankyou} from './Components/Thanks/Thankyou';
 
 
 
@@ -42,6 +43,9 @@ function App() {
         <Route path = "/outstation/viewVehicles">
           {/* <Hire /> */}
           {/* <Form /> */}
+        </Route>
+        <Route path = '/thankyou'>
+          <Thankyou />
         </Route>
       </Switch>
       <Hire className = "place"  />

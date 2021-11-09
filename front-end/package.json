@@ -13,7 +13,11 @@
     "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.3.0",
+<<<<<<< HEAD
     "react-scripts": "^4.0.3",
+=======
+    "react-scripts": "4.0.3",
+>>>>>>> 226fdb1f9af0d47026bed15a63edd767bec91411
     "react-toggle-button": "^2.2.0",
     "reactstrap": "^9.0.0",
     "styled-components": "^5.3.3",
