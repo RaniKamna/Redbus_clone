@@ -1,8 +1,8 @@
-import {useState} from "react";
+// import {useState} from "react";
 import "./show-vehicle.css";
 
 
-function Show ({data}) {
+function Show_one ({data}) {
     // console.log(data);
     return (
         <div className = "containera">
@@ -14,7 +14,7 @@ function Show ({data}) {
                 <p className = "starting_price">Starting from :<span> {data.starting_price}</span></p>
                 
                 <p className = "city"> city <span>{data.city}</span></p>
-                <p className = "driver_bata"> driver Bata {data.driver_bata}</p>
+                <p className = "driver_bata"> driver Bata ₹{data.driver_bata}</p>
                 <p className = "local_package">Local packages starging from {data.local_package_start}</p>
                 <p className = "fuel">Fuel Included</p>
                 <ul className = "feature">
@@ -29,4 +29,4 @@ function Show ({data}) {
     )
 }
 
-export {Show};
+export {Show_one};

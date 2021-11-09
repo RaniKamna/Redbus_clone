@@ -57,7 +57,7 @@ const Form = () => {
       let pick_up = formData.pick_up;
       let dest = formData.destination;
       
-      let response = await fetch(`https://api.distancematrix.ai/maps/api/distancematrix/json?origins=${pick_up}&destinations=${dest}&departure_time=now&key=QkMpIWI53M0AlwtNoIQkv7eJh5HcQ`)
+      let response = await fetch(`https://api.distancematrix.ai/maps/api/distancematrix/json?origins=${pick_up}&destinations=${dest}&departure_time=now&key=KRffoEucXA6ExG6V2L5djf3PDBNdS`)
       let data = await response.json();
       console.log(data);
       const distancea = data.rows[0].elements[0].distance.value;
