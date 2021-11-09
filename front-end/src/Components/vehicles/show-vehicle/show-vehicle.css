@@ -1,11 +1,12 @@
 .containera {
-    width: 260px;
+    width: 300px;
     border : 0px solid black;
     border-radius: 10px;
     display: grid;
     padding: 0px;
     grid-template-rows: 30% 80%;
     box-shadow: 1px 2px 3px rgb(201, 162, 162);
+    background-color: white;
 
 }
 
