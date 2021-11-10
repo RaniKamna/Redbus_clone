@@ -1,0 +1,36 @@
+body{
+    margin: 1rem;
+}
+.poora{
+    width: 25%;
+  
+    background-color:rgb(238, 238, 238);
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.poora1{
+    margin-top: 5%;
+}
+.head{
+    color: #3e3e52;
+    font-size: 13px;
+    font-weight: bold;
+}
+.bdy{
+    color: #3e3e52;
+    font-size: 12px;
+
+}
+img{
+    width: 5%;
+    float: left;
+}
+hr{
+    opacity: 0.1;
+}
+.inp{
+    line-height: 1.9;
+}
+.inp1{
+    float: left;
+}

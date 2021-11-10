@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 
 const bookingSchema = new mongoose.Schema({
     bus_name: { type: String, required: true },
-    pick_up_time: { type: String, required: true },
-    duration: { type: String, required: true },
-    drop_time: { type: String, required: true },
+    pick_up_time: { type: Number, required: true },
+    duration: { type: Number, required: true },
+    drop_time: { type: Number, required: true },
     rating: { type: Number, required: true },
     price: { type: Number, required: true },
     seats_available: { type: Number, required: true },
@@ -14,7 +14,8 @@ const bookingSchema = new mongoose.Schema({
     passengers: [{ 
         name : {type : String},
         gender : {type : String},
-        age : {type : Number}
+        age : {type : Number},
+        seat_no:{type:String}
      }],
      sleeper : {type : Boolean, required : true},
      ac : {type : Boolean, required : true},
