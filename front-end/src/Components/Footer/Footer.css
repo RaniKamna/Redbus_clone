@@ -1,17 +1,17 @@
 .footer{
-    /* display: flex; */
-    width: 100vw;
-    /* margin-left: 50px; */
+   width: 100%;
+
     background-color:#e5e5e5 ;
   
 }
 .main{
-    margin-left: 80px;
+    margin-left: 40px;
     display: flex;
     
 }
 .main>div{
-    margin-left: 60px;
+    margin-left: 80px;
+    /* text-align: center; */
 }
 .footer>div>div>ul{
     list-style-type: none;
