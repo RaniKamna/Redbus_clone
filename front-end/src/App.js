@@ -14,6 +14,7 @@ import {Show} from "./Components/Show/Show";
 
 
 import {Buses} from "./Components/available-bus/Buses";
+import {OneBus} from "./Components/available-bus/one-bus/OneBus";
 
 
 
@@ -37,10 +38,13 @@ const getAll = async () => {
 }
 
 
+
 useEffect(() => {
   getAll();
   // console.log(bus, car,)
 }, [])
+
+
 
 
 
@@ -61,7 +65,8 @@ useEffect(() => {
 
 
       <Route exact path = "/available_bus">
-        <Buses />
+        {/* <OneBus data = {obj} /> */}
+        <Buses></Buses>
       </Route>
 
 

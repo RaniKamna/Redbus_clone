@@ -15,7 +15,7 @@ router.get('/:id', async (req, res) => {
 
 router.post("/", async (req, res) => {
     let item = await Booking.create(req.body);
-    return res.status(201).send({ item });
+    return res.status(201).send(item);
 });
 
 module.exports = router;
