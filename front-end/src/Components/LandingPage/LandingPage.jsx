@@ -2,10 +2,12 @@
 import React from "react";
 import styles from "./LandingPage.module.css"
 import Break from "./Break.jsx";
+import { useHistory } from 'react-router-dom';
 
 
 // import { FaCity } from "react-icons/fa"
 const LandingPage = () => {
+  const history = useHistory();
  
   return (
     <div>
@@ -31,7 +33,7 @@ const LandingPage = () => {
               placeholder="DATE" />
           </div>
           <div className={styles.type_search}>
-            <button>Search Buses</button>
+            <button onClick={() => history.push('/SearchBuses')}>Search Buses</button>
           </div>
         </div>
         <div className={styles.natak}>
@@ -160,7 +162,7 @@ const LandingPage = () => {
              <br/>
               <div className={styles.txt}>SAFETY+</div>
               <br/>
-              <div className={styles.text2} className={styles.ig1}>With Safety+ we have brought in a set of measures like Sanitized buses, mandatory masks etc. to ensure you travel safely.</div>
+              <div className={styles.text2} >With Safety+ we have brought in a set of measures like Sanitized buses, mandatory masks etc. to ensure you travel safely.</div>
             </div>
 
             <div className={styles.prms2}>
@@ -168,7 +170,7 @@ const LandingPage = () => {
               <br/>
               <div className={styles.txt}>SUPERIOR CUSTOMER SERVICE</div>
               <br/>
-              <div className={styles.text2} className={styles.ig1}>We put our experience and relationships to good use and are available to solve your travel issues.</div>
+              <div className={styles.text2} >We put our experience and relationships to good use and are available to solve your travel issues.</div>
             </div>
 
             <div className={styles.prms2}>
@@ -176,7 +178,7 @@ const LandingPage = () => {
               <br/>
               <div className={styles.txt}>LOWEST PRICES</div>
              <br/>
-             <div className={styles.text2} className={styles.ig1}>We always give you the lowest price with the best partner offers.</div>
+             <div className={styles.text2}>We always give you the lowest price with the best partner offers.</div>
             </div>
 
             <div className={styles.prms2}>
@@ -184,7 +186,7 @@ const LandingPage = () => {
               <br/>
                <div className={styles.txt}>UNMATCHED BENEFITS</div>
                <br/>
-               <div className={styles.text2} className={styles.ig1}>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</div>
+               <div className={styles.text2} c>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</div>
             </div>
           </div>
         </div>

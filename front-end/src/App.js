@@ -42,6 +42,7 @@ useEffect(() => {
 
 
   return (
+   
     <div>
       <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
