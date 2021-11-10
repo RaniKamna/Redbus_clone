@@ -11,7 +11,15 @@ const bookingSchema = new mongoose.Schema({
     seat_type: { type: String },
     pickup_address: { type: String, required: true },
     drop_address: { type: String, required: true },
-    passengers: [{ type: String, required: true }],
+    passengers: [{ 
+        name : {type : String},
+        gender : {type : String},
+        age : {type : Number}
+     }],
+     sleeper : {type : Boolean, required : true},
+     ac : {type : Boolean, required : true},
+     nonac : {type : Boolean, required : true},
+    travel_name: {type : String, required : true}
 
 })
 

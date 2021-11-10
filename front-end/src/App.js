@@ -13,6 +13,10 @@ import {Show} from "./Components/Show/Show";
 
 
 
+import {Buses} from "./Components/available-bus/Buses";
+
+
+
 function App() {
 const [car, setCar] = useState([]);
 const [bus, setBus] = useState([]);
@@ -53,6 +57,17 @@ useEffect(() => {
         {/* <Nav1 /> */}
           <LandingPage />
         </Route>
+
+
+
+
+      <Route exact path = "/available_bus">
+        <Buses />
+      </Route>
+
+
+
+
         <Route path='/rpool' exact>
           <Rpool />
         </Route>
@@ -91,6 +106,7 @@ useEffect(() => {
         </Route>
       </Switch>
       <Hire className = "place"  />
+      
 
 
     </div>
