@@ -3,7 +3,8 @@ import './Footer.css'
 
 export const Footer=()=>{
     return(
-        <div className="footer">
+        <div>
+            <div className="footer">
            <div className="main">
            <div>
                 <ul>
@@ -44,5 +45,13 @@ export const Footer=()=>{
             </div>
            </div>
         </div>
+
+       <div>
+           
+       </div>
+
+        </div>
+
+        
     )
 }
