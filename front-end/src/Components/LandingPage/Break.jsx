@@ -25,8 +25,9 @@ state ={
   return(
     
         <Carousel breakPoints={breakPoints}>
-        {items.map(item => <div key={item.id} className="div"> <p>{item.tit}</p> <img src={item.url} alt="imss"/> <p>{item.tit2}</p> </div>)}
+        {items.map(item => <div key={item.id} className="div divq" > <p>{item.tit}</p> <img src={item.url} alt="imss"/> <p>{item.tit2}</p> </div>)}
         </Carousel>
+
   )
 }
 
