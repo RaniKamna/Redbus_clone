@@ -5,6 +5,7 @@ import { LandingPage } from "./Components/LandingPage/LandingPage.jsx";
 import { Rpool } from './Components/Rpool/Rpool';
 import { Bushire } from './Components/BusHireMain/BusHire'
 import {Thankyou} from './Components/Thanks/Thankyou';
+import { Showseat } from './Components/ShowSeat/Showseat';
 
 
 import {Hire} from "./Components/hire-vehicle/Hire-vehicle";
@@ -50,6 +51,7 @@ useEffect(() => {
 
 
   return (
+   
     <div>
       <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
@@ -73,7 +75,8 @@ useEffect(() => {
 
 
         <Route path='/rpool' exact>
-          <Rpool />
+          <Showseat />
+          {/* <Rpool /> */}
         </Route>
         <Route path='/bushire' exact>
           <Bushire />

@@ -1,0 +1,171 @@
+.main_container{
+    background-color: #eeeded;
+    position: relative;
+    margin-top: 10px;
+    padding-top: 10px;
+    overflow: auto;
+}
+.crossicon{
+    float: right;
+    margin: 8px 15px 0 0;
+    font-weight: 700;
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    z-index: 1;
+    right: 0;
+    top: 2%;
+    position: absolute;
+}
+.leftdiv{
+    width: 60%;
+    float: left;
+}
+.selectseat{
+    padding: 0;
+}
+.seatsel{
+    width: 100%;
+}
+.nav{
+    text-align: center;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #c2c2c2;
+}
+.colm{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+.tagg{
+    font-weight: 700;
+    padding-right: 15px;
+    float: left;
+    line-height: 30px;
+    margin: 0;
+    width: 130px;
+    text-align: right;
+    font-size: 14px;
+}
+.btns{
+    display: flex;
+    width: 38%;
+}
+.btns > div {
+    width: 100%;
+}
+.listall{
+    background: #545454;
+    color: #fff;
+    width: 75px;
+    margin-right: 10px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    height: 33px;
+    padding: 6px 5px 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.list{
+    width: 75px;
+    margin-right: 10px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #3e3e52;
+    text-align: center;
+    cursor: pointer;
+    height: 33px;
+    padding: 6px 5px 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.imgseat{
+    margin-top: 60px;
+    padding-top: 80px;
+    width: 100%;
+}
+.label{
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 700;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.lblmsg{
+    background-color: #d84e55;
+    color: #fff;
+    padding: 3px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.tblvw{
+    display: table;
+    margin: 0 auto;
+}
+.seat1{
+    padding: 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.seattag{
+    font-size: 16px;
+    font-weight: 300;
+}
+.chair{
+    display: inline-block;
+    vertical-align: baseline;
+}
+.seatdiv{
+    width: 94%;
+    background: white;
+    border-right: 3px solid #c2c2c2;
+    /* border: 1px solid #c2c2c2; */
+    /* float: right; */
+}
+.rightdiv{
+    width: 36%;
+    float: left;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 130px;
+}
+.boxtext{
+    width: 40%;
+    margin: 0;
+    display: flex;
+    padding: 5px 0;
+}
+.chkbox{
+    width: 34px;
+    border: 1px solid #a7a9ac;
+    height: 17px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+.chktext{
+    float: left;
+    text-transform: capitalize;
+    line-height: 17px;
+    font-weight: 300;
+}
+.deal{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.border{
+    padding: 1%;
+    width: 120%;
+    height: 250px;
+    background: white;
+    overflow: auto;
+    border-left: 5px solid #c2c2c2;
+}
