@@ -5,6 +5,7 @@ import { LandingPage } from "./Components/LandingPage/LandingPage.jsx";
 import { Rpool } from './Components/Rpool/Rpool';
 import { Bushire } from './Components/BusHireMain/BusHire'
 import {Thankyou} from './Components/Thanks/Thankyou';
+import { Showseat } from './Components/ShowSeat/Showseat';
 
 
 import {Hire} from "./Components/hire-vehicle/Hire-vehicle";
@@ -15,6 +16,7 @@ import { SearchBuses } from './Components/LandingPage/SearchBuses';
 
 
 import {Buses} from "./Components/available-bus/Buses";
+import {OneBus} from "./Components/available-bus/one-bus/OneBus";
 
 
 
@@ -38,10 +40,13 @@ const getAll = async () => {
 }
 
 
+
 useEffect(() => {
   getAll();
   // console.log(bus, car,)
 }, [])
+
+
 
 
 
@@ -67,14 +72,17 @@ useEffect(() => {
 
 
       <Route exact path = "/available_bus">
-        <Buses />
+        {/* <OneBus data = {obj} /> */}
+        <Buses></Buses>
       </Route>
 
 
 
 
-       
-       
+        <Route path='/rpool' exact>
+          {/* <Showseat /> */}
+          <Rpool />
+        </Route>
         <Route path='/bushire' exact>
           <Bushire />
 
