@@ -10,6 +10,7 @@ import {Thankyou} from './Components/Thanks/Thankyou';
 import {Hire} from "./Components/hire-vehicle/Hire-vehicle";
 import {Form} from "./Components/hire-vehicle/Form-template/Form-template";
 import {Show} from "./Components/Show/Show";
+import { SearchBuses } from './Components/LandingPage/SearchBuses';
 
 
 
@@ -57,6 +58,10 @@ useEffect(() => {
         {/* <Nav1 /> */}
           <LandingPage />
         </Route>
+        <Route path='/SearchBuses' exact>
+                <SearchBuses />
+
+              </Route>
 
 
 
@@ -68,9 +73,8 @@ useEffect(() => {
 
 
 
-        <Route path='/rpool' exact>
-          <Rpool />
-        </Route>
+       
+       
         <Route path='/bushire' exact>
           <Bushire />
 
