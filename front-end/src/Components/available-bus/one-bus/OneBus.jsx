@@ -1,3 +1,6 @@
+import { Showseat } from '../../ShowSeat/Showseat';
+
+
 import styled from "styled-components";
 
 import {useState} from "react";
@@ -128,7 +131,7 @@ function OneBus ({data}) {
 
     const Seat_div = styled.div`
         border: 1px solid black;
-        height: 200px;
+        // height: 200px;
     `
     return (
         <Main_container>
@@ -176,7 +179,7 @@ function OneBus ({data}) {
             {
                 toggle? (
                     <Seat_div>
-                        this is the seat div
+                        <Showseat />
                      </Seat_div>
                 ): (
                     ""
