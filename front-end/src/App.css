@@ -6,14 +6,15 @@
 }
 .position-fixed {
   /* margin-left: 1000px; */
-  /* position: fixed; */
-  z-index: 1;
-  /* margin-top: -4500px; */
+  position: fixed;
+  z-index: 2;
+  /* margin-top: -8500px; */
+
 }
 .journey-type-container {
   margin-left: 1000px;
   position: fixed;
-  margin-top: -4800px;
+  margin-top: -8500px;
   z-index:1;
 }
 .App-logo {

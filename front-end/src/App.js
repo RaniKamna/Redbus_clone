@@ -14,6 +14,10 @@ import {Show} from "./Components/Show/Show";
 
 
 
+import {Buses} from "./Components/available-bus/Buses";
+
+
+
 function App() {
 const [car, setCar] = useState([]);
 const [bus, setBus] = useState([]);
@@ -43,6 +47,7 @@ useEffect(() => {
 
 
   return (
+   
     <div>
       <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
@@ -53,6 +58,17 @@ useEffect(() => {
         {/* <Nav1 /> */}
           <LandingPage />
         </Route>
+
+
+
+
+      <Route exact path = "/available_bus">
+        <Buses />
+      </Route>
+
+
+
+
         <Route path='/rpool' exact>
           <Showseat />
           {/* <Rpool /> */}
@@ -92,6 +108,7 @@ useEffect(() => {
         </Route>
       </Switch>
       <Hire className = "place"  />
+      
 
 
     </div>
