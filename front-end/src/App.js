@@ -105,7 +105,7 @@ useEffect(() => {
         </Route>
       </Switch>
       <Hire className = "place"  />
-      {/* <Buses /> */}
+      
 
 
     </div>

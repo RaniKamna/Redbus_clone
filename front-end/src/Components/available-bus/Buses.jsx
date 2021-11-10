@@ -5,6 +5,23 @@ import {useState, useEffect} from "react";
 
 function Buses() {
 
+
+    const [buses, setBuses] = useState([]);
+
+    const getBuses = async() => {
+        let res = await fetch("http://localhost:2233/booking");
+        let busesa = await res.json();
+        setBuses([...buses, busesa.item]);
+    }
+    useEffect(() => {
+        getBuses();
+        console.log(buses[0].item);
+    }, []);
+
+    // console.log(buses);
+
+
+
     const Container = styled.div`
         width: 100%;
         height: 1000px;
@@ -29,8 +46,10 @@ function Buses() {
 
     return (
         <Container >
-            <Filter_container>this is the test</Filter_container>
-            <Available_bus_container></Available_bus_container>
+            <Filter_container></Filter_container>
+            <Available_bus_container>
+
+            </Available_bus_container>
         </Container>
     )
 }
