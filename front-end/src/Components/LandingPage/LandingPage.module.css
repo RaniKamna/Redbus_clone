@@ -34,7 +34,7 @@
   font-family: sans-serif;
 }
 
-.type_search>button {
+.link{
   background-color: #d84f57;
   color: white;
   width: 100%;
@@ -42,6 +42,16 @@
   height: 40px;
   font-size: 20px;
   font-family: sans-serif;
+}
+.type_search{
+  background-color: #d84f57;
+  color: white;
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+
 }
 
 .div {
@@ -1053,7 +1063,7 @@ grid-gap: 0.5%;
 }
 
 .name {
-  height: 250px;
+  height: 300ppx;
   margin: auto;
   width: 100%;
 }
@@ -1071,11 +1081,14 @@ grid-gap: 0.5%;
   display: grid;
   grid-template-columns: 20% 20% 20%;
   grid-gap: 5%;
-  margin-left: 23%;
+ 
+}
+.num1{
+  /* margin-left: 16%; */
   margin-top: 2%;
   text-align: center;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 13px;
   color: #737373;
 }
 
