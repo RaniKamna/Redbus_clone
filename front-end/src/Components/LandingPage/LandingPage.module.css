@@ -1,9 +1,12 @@
 
 
-.body {
+/* .body {
   margin: 1px 1px 1px 1px;
-}
+} */
 
+/* *{
+  margin:0px
+} */
 .welcome_image {
   height: 475px;
   width: 100%;
@@ -580,9 +583,9 @@ grid-gap: 0.5%;
   width: 90%;
   margin-left: 10%;
 }
-.body {
+/* .body {
   margin: 1px 1px 1px 1px;
-}
+} */
 
 .welcome_image {
   height: 475px;
