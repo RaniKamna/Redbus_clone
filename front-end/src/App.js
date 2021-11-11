@@ -1,4 +1,6 @@
 import './App.css';
+import "./Components/menu/Navbarmenu.css"
+import { Allrouter } from './Components/menu/allrouter';
 import { Route, Switch, Link } from 'react-router-dom';
 import {useState, useEffect} from "react";
 import { LandingPage } from "./Components/LandingPage/LandingPage.jsx";
@@ -54,14 +56,16 @@ useEffect(() => {
   return (
    
     <div>
-      <Link to='/'>Home </Link>
+      <Allrouter />
+      {/* <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
-      <Link to='/bushire'>BusHire</Link>
+      <Link to='/bushire'>BusHire</Link> */}
       {/* <Link to='/available_bus'>Bus</Link> */}
 
       <Switch>
         <Route path='/' exact>
         {/* <Nav1 /> */}
+        {/* <Allrouter /> */}
           <LandingPage />
         </Route>
         <Route path='/SearchBuses' exact>
