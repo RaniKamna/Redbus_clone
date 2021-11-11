@@ -81,8 +81,8 @@ useEffect(() => {
    
     <div>
       <Allrouter />
-      {/* <Link to='/'>Home </Link>
-      <Link to='/rpool'>rPool </Link>
+       <Link to='/'>Home </Link>
+      {/*<Link to='/rpool'>rPool </Link>
       <Link to='/bushire'>BusHire</Link> */}
       {/* <Link to='/available_bus'>Bus</Link> */}
 
@@ -90,10 +90,12 @@ useEffect(() => {
         <Route path='/' exact>
         {/* <Nav1 /> */}
         {/* <Allrouter /> */}
+
           <LandingPage />
+          {/* <Buses/> */}
         </Route>
-        <Route path='/SearchBuses' exact>
-                <SearchBuses />
+        <Route path='/available_bus' exact>
+               <Buses/>
 
               </Route>
 

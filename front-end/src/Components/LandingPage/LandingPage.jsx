@@ -37,7 +37,7 @@ const LandingPage = () => {
               placeholder="DATE" />
           </div>
           <div >
-            <Link to='/SearchBuses' >
+            <Link to='/available_bus' >
             <button className={styles.link}  >Search Buses</button>
             </Link>
           </div>
