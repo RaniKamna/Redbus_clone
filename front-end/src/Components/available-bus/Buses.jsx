@@ -67,7 +67,7 @@ function Buses({data}) {
     
     `
 
-
+    // console.log(buses[0]);
 
     return (
         <Container >
