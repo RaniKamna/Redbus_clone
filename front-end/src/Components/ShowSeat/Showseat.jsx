@@ -100,18 +100,18 @@ export const Showseat = ({bus}) => {
                                                             <div><img src="./seat.jpg" alt="" /></div> */}
                                                         </div>
                                                         <div style={{ display: 'flex' }}>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat13" type="checkbox" id="checkbox-id12" /> <label for="checkbox-id12"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat14" type="checkbox" id="checkbox-id13" /> <label for="checkbox-id13"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat15" type="checkbox" id="checkbox-id14" /> <label for="checkbox-id14"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat16" type="checkbox" id="checkbox-id15" /> <label for="checkbox-id15"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat17" type="checkbox" id="checkbox-id16" /> <label for="checkbox-id16"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat18" type="checkbox" id="checkbox-id17" /> <label for="checkbox-id17"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat19" type="checkbox" id="checkbox-id18" /> <label for="checkbox-id18"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat20" type="checkbox" id="checkbox-id19" /> <label for="checkbox-id19"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat21" type="checkbox" id="checkbox-id20" /> <label for="checkbox-id20"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat22" type="checkbox" id="checkbox-id21" /> <label for="checkbox-id21"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat23" type="checkbox" id="checkbox-id22" /> <label for="checkbox-id22"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat24" type="checkbox" id="checkbox-id23" /> <label for="checkbox-id23"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat13" type="checkbox" id="checkbox-id12" /> <label for="checkbox-id12"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat14" type="checkbox" id="checkbox-id13" /> <label for="checkbox-id13"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat15" type="checkbox" id="checkbox-id14" /> <label for="checkbox-id14"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat16" type="checkbox" id="checkbox-id15" /> <label for="checkbox-id15"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat17" type="checkbox" id="checkbox-id16" /> <label for="checkbox-id16"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat18" type="checkbox" id="checkbox-id17" /> <label for="checkbox-id17"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat19" type="checkbox" id="checkbox-id18" /> <label for="checkbox-id18"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat20" type="checkbox" id="checkbox-id19" /> <label for="checkbox-id19"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat21" type="checkbox" id="checkbox-id20" /> <label for="checkbox-id20"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat22" type="checkbox" id="checkbox-id21" /> <label for="checkbox-id21"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat23" type="checkbox" id="checkbox-id22" /> <label for="checkbox-id22"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat24" type="checkbox" id="checkbox-id23" /> <label for="checkbox-id23"></label></div>
                                                             {/* <div><img src="./seat.jpg" alt="" /></div>
                                                             <div><img src="./seat.jpg" alt="" /></div>
                                                             <div><img src="./seat.jpg" alt="" /></div>
@@ -127,27 +127,27 @@ export const Showseat = ({bus}) => {
                                                         </div>
                                                         <div>
                                                             {/* <div><img src="./seat.jpg" alt="" /></div> */}
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat25" type="checkbox" id="checkbox-id24" /> <label for="checkbox-id24"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat25" type="checkbox" id="checkbox-id24" /> <label for="checkbox-id24"></label></div>
 
                                                         </div>
                                                         <div>
                                                             {/* <div><img src="./seat.jpg" alt="" /></div> */}
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat26" type="checkbox" id="checkbox-id25" /> <label for="checkbox-id25"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat26" type="checkbox" id="checkbox-id25" /> <label for="checkbox-id25"></label></div>
 
                                                         </div>
                                                         <div style={{ display: 'flex' }}>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat27" type="checkbox" id="checkbox-id37" /> <label for="checkbox-id37"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat28" type="checkbox" id="checkbox-id26" /> <label for="checkbox-id26"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat29" type="checkbox" id="checkbox-id27" /> <label for="checkbox-id27"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat30" type="checkbox" id="checkbox-id28" /> <label for="checkbox-id28"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat31" type="checkbox" id="checkbox-id29" /> <label for="checkbox-id29"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat32" type="checkbox" id="checkbox-id30" /> <label for="checkbox-id30"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat33" type="checkbox" id="checkbox-id31" /> <label for="checkbox-id31"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat34" type="checkbox" id="checkbox-id32" /> <label for="checkbox-id32"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat35" type="checkbox" id="checkbox-id33" /> <label for="checkbox-id33"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat36" type="checkbox" id="checkbox-id34" /> <label for="checkbox-id34"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat37" type="checkbox" id="checkbox-id35" /> <label for="checkbox-id35"></label></div>
-                                                            <div style = {{paddingTop: "10px"}}><input onChange = {handleChange} name = "seat38" type="checkbox" id="checkbox-id36" /> <label for="checkbox-id36"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat27" type="checkbox" id="checkbox-id37" /> <label for="checkbox-id37"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat28" type="checkbox" id="checkbox-id26" /> <label for="checkbox-id26"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat29" type="checkbox" id="checkbox-id27" /> <label for="checkbox-id27"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat30" type="checkbox" id="checkbox-id28" /> <label for="checkbox-id28"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat31" type="checkbox" id="checkbox-id29" /> <label for="checkbox-id29"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat32" type="checkbox" id="checkbox-id30" /> <label for="checkbox-id30"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat33" type="checkbox" id="checkbox-id31" /> <label for="checkbox-id31"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat34" type="checkbox" id="checkbox-id32" /> <label for="checkbox-id32"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat35" type="checkbox" id="checkbox-id33" /> <label for="checkbox-id33"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat36" type="checkbox" id="checkbox-id34" /> <label for="checkbox-id34"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat37" type="checkbox" id="checkbox-id35" /> <label for="checkbox-id35"></label></div>
+                                                            <div style = {{paddingTop: "20px"}}><input onChange = {handleChange} name = "seat38" type="checkbox" id="checkbox-id36" /> <label for="checkbox-id36"></label></div>
                                                         </div>
                                                     </div>
                                                 </div>

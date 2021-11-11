@@ -7,6 +7,7 @@ function Buses() {
 
 
     const [buses, setBuses] = useState();
+    // const [loading, setLoading] = useState(true);
 
     const getBuses = async() => {
         let res = await fetch("http://localhost:2233/booking");
@@ -15,10 +16,15 @@ function Buses() {
     }
     useEffect(() => {
         getBuses();
-        console.log(buses);
+        // setLoading(false);
     }, []);
 
     // console.log(buses);
+    // if(buses.length !== 0) {
+    //     setLoading(false)
+    // } else {
+    //     setLoading(true);
+    // }
 
 
 
@@ -60,24 +66,27 @@ function Buses() {
     return (
         <Container >
             <Filter_container></Filter_container>
-            <Available_bus_container>
-                <Sort_div>
-                    <div>{buses.length} Bus found</div>
-                    <div style = {{fontWeight: "bold"}}>Sort by :</div>
-                    <div>Departure</div>
-                    <div>Duration</div>
-                    <div>Arrival</div>
-                    <div>Ratings</div>
-                    <div>Fare</div>
-                    <div>Seats available</div>
-                </Sort_div>
-                {
-                    buses.map((e) => (
-                        <OneBus key = {e._id} data = {e}></OneBus>
-                    ))
-                }
-                
-            </Available_bus_container>
+            
+                    <Available_bus_container>
+                        <Sort_div>
+                            <div>{buses.length} Bus found</div>
+                            <div style = {{fontWeight: "bold"}}>Sort by :</div>
+                            <div>Departure</div>
+                            <div>Duration</div>
+                            <div>Arrival</div>
+                            <div>Ratings</div>
+                            <div>Fare</div>
+                            <div>Seats available</div>
+                        </Sort_div>
+                        {
+                            buses.map((e) => (
+                                <OneBus key = {e._id} data = {e}></OneBus>
+                            ))
+                        }
+                        
+                    </Available_bus_container>
+             
+            
         </Container>
     )
 }
