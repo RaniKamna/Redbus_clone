@@ -81,18 +81,18 @@ useEffect(() => {
    
     <div>
       <Allrouter />
-      {/* <Link to='/'>Home </Link>
-      <Link to='/rpool'>rPool </Link>
+       <Link to='/'>Home </Link>
+      {/*<Link to='/rpool'>rPool </Link>
       <Link to='/bushire'>BusHire</Link> */}
       {/* <Link to='/available_bus'>Bus</Link> */}
 
       <Switch>
-        <Route path='/available_bus' exact>
+        <Route path='/' exact>
         {/* <Nav1 /> */}
         {/* <Allrouter /> */}
 
           <LandingPage />
-          <Buses/>
+          {/* <Buses/> */}
         </Route>
         <Route path='/available_bus' exact>
                <Buses/>
