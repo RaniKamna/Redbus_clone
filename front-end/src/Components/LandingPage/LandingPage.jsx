@@ -2,13 +2,17 @@
 import React from "react";
 import styles from "./LandingPage.module.css"
 import Break from "./Break.jsx";
-import { useHistory } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
+import { SearchBuses } from "./SearchBuses";
+import {Footer} from '../Footer/Footer'
+
+
+
 
 
 // import { FaCity } from "react-icons/fa"
 const LandingPage = () => {
-  const history = useHistory();
- 
+
   return (
     <div>
 
@@ -32,8 +36,10 @@ const LandingPage = () => {
               type="date"
               placeholder="DATE" />
           </div>
-          <div className={styles.type_search}>
-            <button onClick={() => history.push('/SearchBuses')}>Search Buses</button>
+          <div >
+            <Link to='/SearchBuses' >
+            <button className={styles.link}  >Search Buses</button>
+            </Link>
           </div>
         </div>
         <div className={styles.natak}>
@@ -42,46 +48,8 @@ const LandingPage = () => {
         </div>
       </div>
       <br /><br /><br /><br /><br />
-      {/* <div className={styles.main} >
-        <div className={styles.div} >
-          <p>Save up to Rs 150 on bus tickets
-          </p>
-          <img src="https://st.redbus.in/Images/INDOFFER/Nonatak/new/80x80.png" alt="imag" />
-          <p>Use code FIRST</p>
-        </div>
-        <div className={styles.div}>
-          <p>State wise Guidelines</p>
-          <img src="https://st.redbus.in/Images/buscommon/guidelines.png" alt="imag" />
-          <p>Click here for latest updates</p>
-        </div>
-        <div className={styles.div}>
-          <p>Get 10% off upto Rs 100 on Gujarat routes.
-
-          </p>
-          <img src="https://st.redbus.in/Images/INDOFFER/FESTIVE/New/Diwali/274x147.png" alt="imag" />
-          <p>Use code LIGHTS10</p>
-
-        </div>
-        <div className={styles.div}>
-          <p>Flat Rs.300 cashback for first time slice users.
-          </p>
-          <img src="https://st.redbus.in/Images/slice/247x147.png" alt="imag" />
-          <p>Use code SLICEIT</p>
-        </div>
-        <div className={styles.div}>
-          <p>Get upto Rs. 500 on minimum purchase of Rs 300.
-          </p>
-          <img src="https://s1.rdbuz.com/images/MobileOffers/amazon/offertile..png" alt="imag" />
-          <p>Pay using Amazon pay</p>
-        </div>
-        <div className={styles.div}>
-          <p>Get 15% off upto Rs 150
-          </p>
-          <img src="https://st.redbus.in/Images/slice/247x147.png" alt="imag" />
-          <p>Use code SLICEIT</p>
-        </div>
-      </div> */}
-    <Break/>
+     
+      <Break />
 
 
       <div className={styles.safety}>
@@ -191,46 +159,46 @@ const LandingPage = () => {
 
       <div className={styles.prms}>
         <div className={styles.ig}><img src="https://s1.rdbuz.com/web/images/home/promise.png" alt="rdbuz" /></div>
-      
+
         <div className={styles.prms1}>we promise to deliver</div>
-        <br/>
+        <br />
         <div>
           <div className={styles.prms3}>
             <div className={styles.prms2}>
               <div styles={styles.ig3}><img src="https://s3.rdbuz.com/Images/safety/srp/safety.svg" alt="imag" /></div>
-             <br/>
+              <br />
               <div className={styles.txt}>SAFETY+</div>
-              <br/>
+              <br />
               <div className={styles.text2} >With Safety+ we have brought in a set of measures like Sanitized buses, mandatory masks etc. to ensure you travel safely.</div>
             </div>
 
             <div className={styles.prms2}>
               <div styles={styles.ig3}><img src="https://s1.rdbuz.com/web/images/home/customer_care.png" alt="imag" /></div>
-              <br/>
+              <br />
               <div className={styles.txt}>SUPERIOR CUSTOMER SERVICE</div>
-              <br/>
+              <br />
               <div className={styles.text2} >We put our experience and relationships to good use and are available to solve your travel issues.</div>
             </div>
 
             <div className={styles.prms2}>
               <div styles={styles.ig3}><img src="https://s1.rdbuz.com/web/images/home/lowest_Fare.png" alt="imag" /></div>
-              <br/>
+              <br />
               <div className={styles.txt}>LOWEST PRICES</div>
-             <br/>
-             <div className={styles.text2}>We always give you the lowest price with the best partner offers.</div>
+              <br />
+              <div className={styles.text2}>We always give you the lowest price with the best partner offers.</div>
             </div>
 
             <div className={styles.prms2}>
               <div styles={styles.ig3}><img src="https://s2.rdbuz.com/web/images/home/benefits.png" alt="imag" /></div>
-              <br/>
-               <div className={styles.txt}>UNMATCHED BENEFITS</div>
-               <br/>
-               <div className={styles.text2} c>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</div>
+              <br />
+              <div className={styles.txt}>UNMATCHED BENEFITS</div>
+              <br />
+              <div className={styles.text2} c>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</div>
             </div>
           </div>
         </div>
       </div>
-      <br/>
+      <br />
       <div className={styles.aw}>
         <div className={styles.award}>AWARDS & RECOGNITION</div><br /><br />
         <div className={styles.award1}>
@@ -293,20 +261,20 @@ const LandingPage = () => {
         <h3 className={styles.center}>THE NUMBERS ARE GROWING!</h3>
         <div className={styles.num}>
           <div>
-            <p>CUSTOMERS</p>
+            <p className={styles.num1}>CUSTOMERS</p>
             <p className={styles.cnt}>36 M</p>
-            <p>redBus is trusted by over 36 million happy customers globally</p>
+            <p className={styles.num1}>redBus is trusted by over 36 million happy customers globally</p>
           </div>
           <div>
-            <p>OPERATORS</p>
+            <p className={styles.num1}>OPERATORS</p>
             <p className={styles.cnt}>3500</p>
-            <p>network of over 3500 bus operators worldwide</p>
+            <p className={styles.num1}>network of over 3500 bus operators worldwide</p>
           </div>
 
           <div>
-            <p>BUS TICKETS</p>
+            <p className={styles.num1}>BUS TICKETS</p>
             <p className={styles.cnt}>220+ M</p>
-            <p>Over 220 million trips booked using redBus</p>
+            <p className={styles.num1}>Over 220 million trips booked using redBus</p>
           </div>
         </div>
 
@@ -362,14 +330,15 @@ const LandingPage = () => {
         <hr className={styles.hr}></hr>
         <div className={styles.mrgn}>
           <p className={styles.bushead} >Top Operators</p>
-          <p>SRS Travels | Evacay Bus | Kallada Travels | KPN Travels | Orange Travels | Parveen Travels | Rajdhani Express | VRL Travels 
+          <p>SRS Travels | Evacay Bus | Kallada Travels | KPN Travels | Orange Travels | Parveen Travels | Rajdhani Express | VRL Travels
             | Chartered Speed Bus | Bengal Tiger | SRM Travels | Infant Jesus | Patel Travels | JBT Travels | Shatabdi Travels
-             | Eagle Travels |Kanker Roadways | Komitla | Sri Krishna Travel | Humsafar Travels | Mahasagar Travels | |Raj Express |
-              Sharma Travels | Shrinath Travels | Universal Travles | Verma Travel | Gujarat Travels | Madurai Radha Travels |
-               Patel Tours and Travels | Paulo Travels | Royal Travels | Amarnath Travel |Vaibhav Travels | Ganesh Travels| Jabbar Travels | Jain Travel | Manish Travels | Pradhan Travels | YBM Travels | Hebron Transports |
-             Mahalaxmi travels | MR Travels | Vivegam Travels | VST Travels| Jakhar Travels | Kaleswari Travels | Mahendra Travels | Neeta Tours and Travels | Yamani Travels | Arthi Travels
+            | Eagle Travels |Kanker Roadways | Komitla | Sri Krishna Travel | Humsafar Travels | Mahasagar Travels | |Raj Express |
+            Sharma Travels | Shrinath Travels | Universal Travles | Verma Travel | Gujarat Travels | Madurai Radha Travels |
+            Patel Tours and Travels | Paulo Travels | Royal Travels | Amarnath Travel |Vaibhav Travels | Ganesh Travels| Jabbar Travels | Jain Travel | Manish Travels | Pradhan Travels | YBM Travels | Hebron Transports |
+            Mahalaxmi travels | MR Travels | Vivegam Travels | VST Travels| Jakhar Travels | Kaleswari Travels | Mahendra Travels | Neeta Tours and Travels | Yamani Travels | Arthi Travels
             A</p>
         </div>
+        <Footer/>
       </div>
 
 

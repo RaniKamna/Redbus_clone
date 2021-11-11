@@ -12,10 +12,12 @@ import { Passenger } from './Components/Passengerdetail/Passenger';
 import {Hire} from "./Components/hire-vehicle/Hire-vehicle";
 import {Form} from "./Components/hire-vehicle/Form-template/Form-template";
 import {Show} from "./Components/Show/Show";
+import { SearchBuses } from './Components/LandingPage/SearchBuses';
 
 
 
 import {Buses} from "./Components/available-bus/Buses";
+import {OneBus} from "./Components/available-bus/one-bus/OneBus";
 
 
 
@@ -23,6 +25,8 @@ function App() {
 const [car, setCar] = useState([]);
 const [bus, setBus] = useState([]);
 const [tempo, setTempo] = useState([]);
+const [buss, setBuses] = useState([]);
+
 
 
 const getAll = async () => {
@@ -36,15 +40,40 @@ const getAll = async () => {
   setBus([...bus, bus_data.item]) ;
   setTempo([...tempo, tempo_data.item]);
 
+
+
+  let res = await fetch("http://localhost:2233/booking/data");
+    let busesa = await res.json();
+    setBuses([...buss, busesa.item]);
+
 }
+
 
 
 useEffect(() => {
   getAll();
+  
   // console.log(bus, car,)
+  console.log("check" , buss);
 }, [])
 
 
+
+
+
+
+
+
+
+// const [loading, setLoading] = useState(true);
+
+// const getBuses = async() => {
+    // let res = await fetch("http://localhost:2233/booking");
+    // let busesa = await res.json();
+    // setBuses(busesa.item);
+// }
+
+// console.log(buss);
 
 
   return (
@@ -53,18 +82,24 @@ useEffect(() => {
       <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
       <Link to='/bushire'>BusHire</Link>
+      {/* <Link to='/available_bus'>Bus</Link> */}
 
       <Switch>
         <Route path='/' exact>
         {/* <Nav1 /> */}
           <LandingPage />
         </Route>
+        <Route path='/SearchBuses' exact>
+                <SearchBuses />
+
+              </Route>
 
 
 
 
       <Route exact path = "/available_bus">
-        <Buses />
+        {/* <OneBus data = {obj} /> */}
+        <Buses data = {buss}></Buses>
       </Route>
 
 
@@ -72,8 +107,8 @@ useEffect(() => {
 
         <Route path='/rpool' exact>
           {/* <Showseat /> */}
-          <Passenger />
-          {/* <Rpool /> */}
+          {/* <Passenger /> */}
+          <Rpool />
         </Route>
         <Route path='/bushire' exact>
           <Bushire />

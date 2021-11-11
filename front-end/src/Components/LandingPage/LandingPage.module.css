@@ -17,24 +17,34 @@
 .total_form {
   margin: 0px auto;
   margin-top: 275px;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  width: 60%;
+  display: flex;
+  max-width: 60%;
+  height: auto;
 }
-
-.total_form>div {
+.type_from{
   width: 100%;
+  height: 100%;
+}
+.total_form>div>input{
+    height: 51px;
+    padding: 3px 5px;
 }
 
-.type_from>input, .type_to>input, .type_date>input {
-  width: 100%;
-  padding: 5px;
-  height: 40px;
-  font-size: 20px;
-  font-family: sans-serif;
+
+
+.link{
+ width: 150px;
+ height: 50px;
+ font-size: 16px;
+ text-align: center;
+ font-weight: 700;
+ color: #ffffff;
+ background-color: #d74f57;
+ border: none;
+ font-family: Montserrat;
 }
 
-.type_search>button {
+/* .type_search{
   background-color: #d84f57;
   color: white;
   width: 100%;
@@ -42,7 +52,8 @@
   height: 40px;
   font-size: 20px;
   font-family: sans-serif;
-}
+
+} */
 
 .div {
   width: 35%;
@@ -584,11 +595,7 @@ grid-gap: 0.5%;
 }
 
 .total_form {
-  margin: 0px auto;
-  margin-top: 275px;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  width: 60%;
+     width: 70%;
 }
 
 .total_form>div {
@@ -1053,7 +1060,7 @@ grid-gap: 0.5%;
 }
 
 .name {
-  height: 250px;
+  height: 300ppx;
   margin: auto;
   width: 100%;
 }
@@ -1071,11 +1078,14 @@ grid-gap: 0.5%;
   display: grid;
   grid-template-columns: 20% 20% 20%;
   grid-gap: 5%;
-  margin-left: 23%;
+ 
+}
+.num1{
+  /* margin-left: 16%; */
   margin-top: 2%;
   text-align: center;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 13px;
   color: #737373;
 }
 

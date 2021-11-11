@@ -20,6 +20,7 @@
 .leftdiv{
     width: 60%;
     float: left;
+    margin-left: -30px;
 }
 .selectseat{
     padding: 0;
@@ -134,6 +135,7 @@
     width: 36%;
     float: left;
     position: relative;
+    margin-left: 55px;
     margin-bottom: 15px;
     margin-top: 130px;
 }
@@ -168,4 +170,34 @@
     background: white;
     overflow: auto;
     border-left: 5px solid #c2c2c2;
+}
+
+
+
+
+
+
+
+
+/*testing*/
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    font-size: 20px;
+     
+}
+input[type="checkbox"] + label {
+    background: url(https://cdn-icons.flaticon.com/png/128/3091/premium/3091397.png?token=exp=1636557826~hmac=c4156819986ad29483b665bc3e44d985)  0 0 no-repeat;
+    /* background-repeat: "no-repeat"; */
+  background-size: 40px 40px;
+    padding-left: 50px;
+    padding-top: 8px;
+    padding-bottom: 150px;
+    margin-top: 5px;
+}
+input[type="checkbox"]:checked + label {
+    background-position: 0 -32px;
+  background: url(https://cdn-icons-png.flaticon.com/128/75/75648.png) 0 0 no-repeat;
+  background-size: 40px 40px;
+  
 }
