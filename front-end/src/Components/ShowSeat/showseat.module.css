@@ -196,7 +196,7 @@ input[type="checkbox"] + label {
     margin-top: 5px;
 }
 input[type="checkbox"]:checked + label {
-    background-position: 0 -32px;
+  /* background-position: 0 -32px; */
   background: url(https://cdn-icons-png.flaticon.com/128/75/75648.png) 0 0 no-repeat;
   background-size: 40px 40px;
   
