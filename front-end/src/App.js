@@ -106,9 +106,9 @@ useEffect(() => {
 
 
         <Route path='/rpool' exact>
-          {/* <Showseat /> */}
-          {/* <Passenger /> */}
-          <Rpool />
+
+          <Passenger />
+          {/* <Rpool /> */}
         </Route>
         <Route path='/bushire' exact>
           <Bushire />
