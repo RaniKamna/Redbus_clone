@@ -1,4 +1,6 @@
 import './App.css';
+import "./Components/menu/Navbarmenu.css"
+import { Allrouter } from './Components/menu/allrouter';
 import { Route, Switch, Link } from 'react-router-dom';
 import {useState, useEffect} from "react";
 import { LandingPage } from "./Components/LandingPage/LandingPage.jsx";
@@ -24,6 +26,8 @@ function App() {
 const [car, setCar] = useState([]);
 const [bus, setBus] = useState([]);
 const [tempo, setTempo] = useState([]);
+const [buss, setBuses] = useState([]);
+
 
 
 const getAll = async () => {
@@ -37,13 +41,21 @@ const getAll = async () => {
   setBus([...bus, bus_data.item]) ;
   setTempo([...tempo, tempo_data.item]);
 
+
+
+  let res = await fetch("http://localhost:2233/booking/data");
+    let busesa = await res.json();
+    setBuses([...buss, busesa.item]);
+
 }
 
 
 
 useEffect(() => {
   getAll();
+  
   // console.log(bus, car,)
+  console.log("check" , buss);
 }, [])
 
 
@@ -51,17 +63,33 @@ useEffect(() => {
 
 
 
+
+
+
+// const [loading, setLoading] = useState(true);
+
+// const getBuses = async() => {
+    // let res = await fetch("http://localhost:2233/booking");
+    // let busesa = await res.json();
+    // setBuses(busesa.item);
+// }
+
+// console.log(buss);
+
+
   return (
    
     <div>
-      <Link to='/'>Home </Link>
+      <Allrouter />
+      {/* <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
-      <Link to='/bushire'>BusHire</Link>
+      <Link to='/bushire'>BusHire</Link> */}
       {/* <Link to='/available_bus'>Bus</Link> */}
 
       <Switch>
         <Route path='/' exact>
         {/* <Nav1 /> */}
+        {/* <Allrouter /> */}
           <LandingPage />
         </Route>
         <Route path='/available_bus' exact>
@@ -74,7 +102,7 @@ useEffect(() => {
 
       <Route exact path = "/available_bus">
         {/* <OneBus data = {obj} /> */}
-        <Buses></Buses>
+        <Buses data = {buss}></Buses>
       </Route>
 
 

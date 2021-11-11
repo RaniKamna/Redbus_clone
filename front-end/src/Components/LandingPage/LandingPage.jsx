@@ -4,6 +4,7 @@ import styles from "./LandingPage.module.css"
 import Break from "./Break.jsx";
 import { Route, Switch, Link } from 'react-router-dom';
 import { SearchBuses } from "./SearchBuses";
+import {Footer} from '../Footer/Footer'
 
 
 
@@ -14,7 +15,7 @@ const LandingPage = () => {
 
   return (
     <div>
-
+      {/* <Allrouter/> */}
       <div className={styles.welcome_image}>
         <div className={styles.total_form}>
           <div className={styles.type_from}>
@@ -35,9 +36,15 @@ const LandingPage = () => {
               type="date"
               placeholder="DATE" />
           </div>
+<<<<<<< HEAD
           <div className={styles.type_search}>
             <Link to='/available_bus' >
             <button className="link"  >Search Buses</button>
+=======
+          <div >
+            <Link to='/SearchBuses' >
+            <button className={styles.link}  >Search Buses</button>
+>>>>>>> b5ba055b698a6e79d1b29bc6ce42cef6aadbf2a5
             </Link>
           </div>
         </div>
@@ -337,6 +344,7 @@ const LandingPage = () => {
             Mahalaxmi travels | MR Travels | Vivegam Travels | VST Travels| Jakhar Travels | Kaleswari Travels | Mahendra Travels | Neeta Tours and Travels | Yamani Travels | Arthi Travels
             A</p>
         </div>
+        <Footer/>
       </div>
 
 

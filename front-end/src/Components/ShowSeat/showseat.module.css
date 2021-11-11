@@ -20,6 +20,7 @@
 .leftdiv{
     width: 60%;
     float: left;
+    margin-left: -30px;
 }
 .selectseat{
     padding: 0;
@@ -134,6 +135,7 @@
     width: 36%;
     float: left;
     position: relative;
+    margin-left: 55px;
     margin-bottom: 15px;
     margin-top: 130px;
 }
