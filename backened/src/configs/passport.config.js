@@ -3,9 +3,9 @@ const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth2").Strategy;
 const { v4: uuidV4 } = require("uuid");
 
-const User = require("../model/user.model");
+const User = require("../models/user.model");
 
-const { createtoken } = require("../controller/auth.controller");
+const { createtoken } = require("../controllers/auth.controller");
 
 passport.use(
   new GoogleStrategy(
