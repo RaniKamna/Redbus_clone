@@ -4,6 +4,7 @@ import styles from "./LandingPage.module.css"
 import Break from "./Break.jsx";
 import { Route, Switch, Link } from 'react-router-dom';
 import { SearchBuses } from "./SearchBuses";
+import {Footer} from '../Footer/Footer'
 
 
 
@@ -337,6 +338,7 @@ const LandingPage = () => {
             Mahalaxmi travels | MR Travels | Vivegam Travels | VST Travels| Jakhar Travels | Kaleswari Travels | Mahendra Travels | Neeta Tours and Travels | Yamani Travels | Arthi Travels
             A</p>
         </div>
+        <Footer/>
       </div>
 
 
