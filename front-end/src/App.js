@@ -6,6 +6,7 @@ import { Rpool } from './Components/Rpool/Rpool';
 import { Bushire } from './Components/BusHireMain/BusHire'
 import {Thankyou} from './Components/Thanks/Thankyou';
 import { Showseat } from './Components/ShowSeat/Showseat';
+import { Passenger } from './Components/Passengerdetail/Passenger';
 
 
 import {Hire} from "./Components/hire-vehicle/Hire-vehicle";
@@ -70,7 +71,8 @@ useEffect(() => {
 
 
         <Route path='/rpool' exact>
-          <Showseat />
+          {/* <Showseat /> */}
+          <Passenger />
           {/* <Rpool /> */}
         </Route>
         <Route path='/bushire' exact>
@@ -85,12 +87,12 @@ useEffect(() => {
         </Route>
         <Route path = "/outstation/contact_details">
           <Bushire />
-          {/* <Hire /> */}
+           <Hire /> 
 
         </Route>
         <Route path = "/outstation/viewVehicles">
-          {/* <Hire /> */}
-          {/* <Form /> */}
+           <Hire /> 
+           <Form />
         </Route>
         <Route path = '/thankyou'>
           <Thankyou />
