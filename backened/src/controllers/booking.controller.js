@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Booking = require("../models/booking.model");
 
-router.get("/", async (req, res) => {
+router.get("/data", async (req, res) => {
     let item = await Booking.find().lean().exec();
     return res.status(200).send({ item });
 });
@@ -15,7 +15,7 @@ router.get('/:id', async (req, res) => {
 
 router.post("/", async (req, res) => {
     let item = await Booking.create(req.body);
-    return res.status(201).send(item);
+    return res.status(201).send({item});
 });
 
 module.exports = router;

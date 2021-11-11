@@ -210,7 +210,7 @@ export const Showseat = ({bus}) => {
 
                                         <div>
 
-                                            <button style = {{width: "500px", color: "white", fontSize : "24px", textAlign : "center", backgroundColor: "tomato"}}>PROCEED TO BOOK</button>
+                                            <button style = {{width: "400px", color: "white", fontSize : "24px", textAlign : "center", backgroundColor: "tomato"}}>PROCEED TO BOOK</button>
                                         </div>
 
                                     </div>

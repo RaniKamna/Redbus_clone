@@ -3,20 +3,26 @@ import {useState, useEffect} from "react";
 import {OneBus} from "./one-bus/OneBus";
 
 
-function Buses() {
+function Buses({data}) {
 
+    // console.log("check", buses);
+    console.log("data", data);
 
-    const [buses, setBuses] = useState();
-    // const [loading, setLoading] = useState(true);
+    const [buses, setBuses] = useState([]);
+    // // const [loading, setLoading] = useState(true);
 
     const getBuses = async() => {
-        let res = await fetch("http://localhost:2233/booking");
+        let res = await fetch("http://localhost:2233/booking/data");
         let busesa = await res.json();
-        setBuses(busesa);
+
+        // setBuses(busesa.item);
+        setBuses([...buses, busesa.item])
+
     }
     useEffect(() => {
         getBuses();
         // setLoading(false);
+        console.log(buses);
     }, []);
 
     // console.log(buses);
@@ -69,7 +75,7 @@ function Buses() {
             
                     <Available_bus_container>
                         <Sort_div>
-                            <div>{buses.length} Bus found</div>
+                            <div>{buses[0].length} Bus found</div>
                             <div style = {{fontWeight: "bold"}}>Sort by :</div>
                             <div>Departure</div>
                             <div>Duration</div>
@@ -79,7 +85,7 @@ function Buses() {
                             <div>Seats available</div>
                         </Sort_div>
                         {
-                            buses.map((e) => (
+                            buses[0].map((e) => (
                                 <OneBus key = {e._id} data = {e}></OneBus>
                             ))
                         }
