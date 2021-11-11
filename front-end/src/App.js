@@ -81,6 +81,7 @@ useEffect(() => {
       <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
       <Link to='/bushire'>BusHire</Link>
+      {/* <Link to='/available_bus'>Bus</Link> */}
 
       <Switch>
         <Route path='/' exact>

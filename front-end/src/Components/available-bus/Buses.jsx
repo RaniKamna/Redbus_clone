@@ -14,8 +14,10 @@ function Buses({data}) {
     const getBuses = async() => {
         let res = await fetch("http://localhost:2233/booking/data");
         let busesa = await res.json();
+
         // setBuses(busesa.item);
         setBuses([...buses, busesa.item])
+
     }
     useEffect(() => {
         getBuses();
