@@ -8,6 +8,9 @@
   font-family: 'Inter', sans-serif;
   display: grid;
 }
+body{
+  margin:0px
+}
 .leftNav>ul{
   display: flex;
   line-height: 27px;
