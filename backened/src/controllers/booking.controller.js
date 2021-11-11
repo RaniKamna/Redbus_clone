@@ -5,6 +5,7 @@ const Booking = require("../models/booking.model");
 
 router.get("/data", async (req, res) => {
     let item = await Booking.find().lean().exec();
+  
     return res.status(200).send({ item });
 });
 
