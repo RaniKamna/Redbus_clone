@@ -179,7 +179,7 @@ function OneBus ({data}) {
             {
                 toggle? (
                     <Seat_div>
-                        <Showseat />
+                        <Showseat bus = {data}/>
                      </Seat_div>
                 ): (
                     ""
