@@ -11,7 +11,7 @@ function Buses() {
     const getBuses = async() => {
         let res = await fetch("http://localhost:2233/booking");
         let busesa = await res.json();
-        setBuses(busesa.item);
+        setBuses(busesa);
     }
     useEffect(() => {
         getBuses();
