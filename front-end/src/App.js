@@ -91,7 +91,7 @@ useEffect(() => {
         {/* <Nav1 /> */}
         {/* <Allrouter /> */}
 
-          <LandingPage />
+          {/* <LandingPage /> */}
           {/* <Buses/> */}
         </Route>
         <Route path='/available_bus' exact>
@@ -112,10 +112,10 @@ useEffect(() => {
 
         <Route path='/rpool' exact>
           {/* <Showseat /> */}
-          <Rpool />
+          {/* <Rpool /> */}
         </Route>
         <Route path='/bushire' exact>
-          <Bushire />
+          {/* <Bushire /> */}
 
           
         </Route>

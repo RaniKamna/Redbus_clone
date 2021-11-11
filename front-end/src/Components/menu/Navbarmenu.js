@@ -55,9 +55,9 @@ const Navbarmenu = () => {
 
                 <div className="leftNav">
                     <ul>
-                      <li className="li1"><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> BUS TICKETS </NavLink></li>
-                      <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> rPool </NavLink></li>
-                      <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> BUS HIRE </NavLink></li>
+                      <li className="li1"><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}><Link to = "/"> BUS TICKETS</Link></NavLink></li>
+                      <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}><Link to = "/rpool"> rPool</Link> </NavLink></li>
+                      <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}><Link to = "/bushire"> BUS HIRE</Link> </NavLink></li>
                     </ul>
                 </div>
 
