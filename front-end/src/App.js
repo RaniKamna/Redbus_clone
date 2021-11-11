@@ -64,8 +64,8 @@ useEffect(() => {
         {/* <Nav1 /> */}
           <LandingPage />
         </Route>
-        <Route path='/SearchBuses' exact>
-                <SearchBuses />
+        <Route path='/available_bus' exact>
+               <Buses/>
 
               </Route>
 

@@ -1,11 +1,6 @@
 import { Showseat } from '../../ShowSeat/Showseat';
-
-
 import styled from "styled-components";
-
 import {useState} from "react";
-
-
 function OneBus ({data}) {
     const [toggle, setToggle] = useState(false);
     console.log(data);
@@ -28,7 +23,6 @@ function OneBus ({data}) {
     //       ac : false,
     //       nonac : false
     //   }
-
     const Main_container = styled.div`
         width: 100%;
         // height: 200px;
@@ -76,17 +70,14 @@ function OneBus ({data}) {
     const Duration_time = styled.p`
     
     `
-
     const Arrival_container = styled.div`
         // border: 1px solid black;
     `
     const Arriaval_time = styled.h3`
-
     `
     const Arriaval_address  = styled.p`
     
     `
-
     const Rating_container = styled.div`
         // border: 1px solid black;
     `
@@ -126,9 +117,7 @@ function OneBus ({data}) {
         width: 150px;
         height: 40px;
         font-size: 20px;
-
     `
-
     const Seat_div = styled.div`
         border: 1px solid black;
         // height: 200px;
@@ -189,5 +178,4 @@ function OneBus ({data}) {
         </Main_container>
     )
 }
-
 export {OneBus};
