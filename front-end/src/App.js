@@ -87,10 +87,12 @@ useEffect(() => {
       {/* <Link to='/available_bus'>Bus</Link> */}
 
       <Switch>
-        <Route path='/' exact>
+        <Route path='/available_bus' exact>
         {/* <Nav1 /> */}
         {/* <Allrouter /> */}
+
           <LandingPage />
+          <Buses/>
         </Route>
         <Route path='/available_bus' exact>
                <Buses/>
