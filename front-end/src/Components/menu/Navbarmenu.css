@@ -22,9 +22,14 @@ body{
 .leftNav>ul a{
   color: white;
   margin-left: 15px;
+   font-size: 16px;
+  font-family: Montserrat;
+  font-weight: bold;
 }
 .leftNav>ul a:hover{
-  text-decoration: underline;
+  /* text-decoration: underline; */
+   font-size: 17;
+    color: #4a4a4a;
 }
 .Navbercontainer {
   width: 100%;
@@ -62,6 +67,18 @@ body{
 /* .is-active {
   color: #ff5800!important;
 } */
+.userprofilelogo{
+  width: 20px;
+  height: 60px;
+  color: #ffff;
+  margin-top: 39px;
+   margin-left: 21px;
+
+}
+.userprofilelogo>svg{
+  width: 30px;
+  height: 30px;
+}
 
 .navBar .col-md-3 {
   z-index: 7;
@@ -85,8 +102,8 @@ li {
   list-style-type: none;
 }
 .menu-item a {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 40px;
   position: relative;
   display: block;

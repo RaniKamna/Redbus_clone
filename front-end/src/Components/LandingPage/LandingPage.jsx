@@ -395,7 +395,7 @@ const LandingPage = () => {
             Mahalaxmi travels | MR Travels | Vivegam Travels | VST Travels| Jakhar Travels | Kaleswari Travels | Mahendra Travels | Neeta Tours and Travels | Yamani Travels | Arthi Travels
             A</p>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
 
 
