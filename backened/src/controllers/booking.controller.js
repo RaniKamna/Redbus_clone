@@ -19,4 +19,9 @@ router.post("/", async (req, res) => {
     return res.status(201).send({item});
 });
 
+router.patch("/update/:id", async (req, res) => {
+    let item = await Booking.findByIdAndUpdate(req.params.id, req.body, {new : true});
+    return res.status(200).send({item})
+})
+
 module.exports = router;

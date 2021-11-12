@@ -25,7 +25,7 @@ export const Bushire=()=>{
             <FaqSection/>
             <Docs/>
             <SubFooter/>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

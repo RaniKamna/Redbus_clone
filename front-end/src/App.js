@@ -20,6 +20,17 @@ import {Buses} from "./Components/available-bus/Buses";
 import {OneBus} from "./Components/available-bus/one-bus/OneBus";
 
 
+//navbar
+import Navbarmenu from "./Components/menu/Navbarmenu";
+
+
+
+//Footer 
+
+import {Footer} from "./Components/Footer/Footer";
+
+
+
 
 function App() {
 const [car, setCar] = useState([]);
@@ -79,11 +90,12 @@ useEffect(() => {
   return (
    
     <div>
-      <Link to='/'>Home </Link>
+      {/* <Link to='/'>Home </Link>
       <Link to='/rpool'>rPool </Link>
-      <Link to='/bushire'>BusHire</Link>
+      <Link to='/bushire'>BusHire</Link> */}
       {/* <Link to='/available_bus'>Bus</Link> */}
-
+     <div><Navbarmenu /></div>
+<div style = {{marginTop: "90px"}}>
       <Switch>
         <Route path='/' exact>
         {/* <Nav1 /> */}
@@ -132,8 +144,8 @@ useEffect(() => {
 
         </Route>
         <Route path = "/outstation/viewVehicles">
-           <Hire /> 
-           <Form />
+           {/* <Hire />  */}
+           {/* <Form /> */}
         </Route>
         <Route path = '/thankyou'>
           <Thankyou />
@@ -152,8 +164,10 @@ useEffect(() => {
       </Switch>
       <Hire className = "place"  />
       
-
-
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

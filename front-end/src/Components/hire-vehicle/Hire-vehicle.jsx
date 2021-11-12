@@ -788,7 +788,7 @@ function Payment () {
                             {/* <P_container>₹{(data.driver_bata * Math.ceil(duration_d.duration/86400) ) + (Math.ceil(duration_d.distance/1000) * data.per_km)}</P_container> */}
                             <Number_container>
                                 <Numbera type = "number" value = {duration_d.phoneNumber}></Numbera>
-                                <Pay_btn ><button onClick = {Order_placed}>Pay now ₹{(data.driver_bata * Math.ceil(duration_d.duration/86400) ) + (Math.ceil(duration_d.distance/1000) * data.per_km)}</button></Pay_btn>
+                                <Pay_btn ><Link to = "/thankyou" ><button onClick = {Order_placed}>Pay now ₹{(data.driver_bata * Math.ceil(duration_d.duration/86400) ) + (Math.ceil(duration_d.distance/1000) * data.per_km)}</button></Link></Pay_btn>
                             </Number_container>
                                 
                         </Insurance_down>

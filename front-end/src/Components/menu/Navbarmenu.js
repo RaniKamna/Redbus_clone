@@ -3,6 +3,7 @@ import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import logo from '../../img/logo.jpg';
+import "./Navbarmenu.css";
 // import {SignInwithGoogle} from '../../firebase';
 // import { firebase } from '../../firebase.js';
 
@@ -10,7 +11,7 @@ const Navbarmenu = () => {
 
     const Redirect = async () =>
     {
-        await(window.location.href="http://localhost:2345/auth/google")
+        await(window.location.href="http://localhost:2233/auth/google")
     }
 
 
