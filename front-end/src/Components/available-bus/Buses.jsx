@@ -197,13 +197,117 @@ function Buses() {
     // } else {
     //     setLoading(true);
     // }
-    const handleClick= () => {
-     var arr =   buses.filter((item)=>(
+    var original=All_bus;
+
+    //DEPARTURE TIME
+    const Before6AM= () => {
+       original=All_bus
+     var arr =   original.filter((item)=>(
             item.pick_up_time <= 6
+         
         ))
+        console.log("ready:",buses)
         setBuses(arr)
        }
- console.log("ready:",buses)
+       const After6Am_Before12PM= () => {
+            original=All_bus
+        var arr =   original.filter((item)=>(
+               item.pick_up_time >6 &&   item.pick_up_time <=12
+           ))
+           console.log("ready:",buses)
+           setBuses(arr)
+          }
+          const After12pm_Before6PM= () => {
+            original=All_bus
+        var arr =   original.filter((item)=>(
+               item.pick_up_time >12 &&   item.pick_up_time <=18
+           ))
+           console.log("ready:",buses)
+           setBuses(arr)
+          }
+          const After6PM_Before12Am= () => {
+            original=All_bus
+        var arr =   original.filter((item)=>(
+               item.pick_up_time >18 &&   item.pick_up_time <=24
+           ))
+           console.log("ready:",buses)
+           setBuses(arr)
+          }
+
+
+          //ARRIVAL TIME
+
+          const Before6AMAT= () => {
+            original=All_bus
+          var arr =   original.filter((item)=>(
+                 item.drop_time<= 6
+              
+             ))
+             console.log("ready:",buses)
+             setBuses(arr)
+            }
+            const After6Am_Before12PMAT= () => {
+                 original=All_bus
+             var arr =   original.filter((item)=>(
+                    item.drop_time>6 &&   item.drop_time<=12
+                ))
+                console.log("ready:",buses)
+                setBuses(arr)
+               }
+               const After12pm_Before6PMAT= () => {
+                 original=All_bus
+             var arr =   original.filter((item)=>(
+                    item.drop_time>12 &&   item.drop_time<=18
+                ))
+                console.log("ready:",buses)
+                setBuses(arr)
+               }
+               const After6PM_Before12AmAT= () => {
+                 original=All_bus
+             var arr =   original.filter((item)=>(
+                    item.drop_time>18 &&   item.drop_time<=24
+                ))
+                console.log("ready:",buses)
+                setBuses(arr)
+               }
+
+
+               //BUS_TYPES
+
+               const Seater= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.drop_time>18 &&   item.drop_time<=24
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const Sleeper= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.sleeper ===true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const AC= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.ac === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const NonAc= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.nonac === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+
+ 
 
 
     const Container = styled.div`
@@ -255,16 +359,16 @@ function Buses() {
 
                 <div className="inp"> 
                     <div className="head">DEPARTURE TIME</div>
-                    <div className="bdy" onClick={handleClick}>
+                    <div className="bdy" onClick={Before6AM}>
                         <input type="checkbox" className="inp1" /> <img className="imgs" src="https://freepngimg.com/download/alarm/22921-5-morning-alarm-image.png" alt="" /> <div  >  Before 6am</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={After6Am_Before12PM}>
                         <input type="checkbox" className="inp1"/><img className="imgs" src="https://th.bing.com/th/id/R.7753f50f02196a8547d206dc00a485fd?rik=kDj3UsII659w8Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_183081.png&ehk=PgJb3%2f9xAwPor0E4QcelZk76VKx%2bAJYgz%2bzePpOi5og%3d&risl=&pid=ImgRaw&r=0" alt="" /> <div>6am to 12pm</div>
                     </div >
-                    <div className="bdy">
+                    <div className="bdy" onClick={After12pm_Before6PM}>
                         <input type="checkbox" className="inp1"/><img className="imgs" src="https://cdn.onlinewebfonts.com/svg/img_168368.png" alt="" /> <div>12pm to 6pm</div>
                     </div >
-                    <div className="bdy">
+                    <div className="bdy" onClick={After6PM_Before12Am}>
                         <input type="checkbox" className="inp1"/><img className="imgs" src="https://cdn.onlinewebfonts.com/svg/img_447445.png" alt="" /> <div>After 6pm</div>
                     </div>
                 </div>
@@ -276,13 +380,13 @@ function Buses() {
                     <div className="bdy">
                         <input type="checkbox" className="inp1" /><div>SEATER</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={Sleeper}>
                         <input type="checkbox" className="inp1"/><div>SLEEPER</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={AC}>
                         <input type="checkbox" className="inp1"/><div>AC</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={NonAc}>
                         <input type="checkbox" className="inp1" /><div>NON AC</div>
                     </div>
                 </div>
@@ -291,16 +395,16 @@ function Buses() {
 
                 <div className="inp">
                     <div className="head">ARRIVAL TIME</div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={Before6AMAT}>
                         <input type="checkbox" className="inp1" /> <img className="imgs" src="https://freepngimg.com/download/alarm/22921-5-morning-alarm-image.png" alt="" /> <div>  Before 6am</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={After6Am_Before12PMAT}>
                         <input type="checkbox" className="inp1"/><img className="imgs" src="https://th.bing.com/th/id/R.7753f50f02196a8547d206dc00a485fd?rik=kDj3UsII659w8Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_183081.png&ehk=PgJb3%2f9xAwPor0E4QcelZk76VKx%2bAJYgz%2bzePpOi5og%3d&risl=&pid=ImgRaw&r=0" alt="" /> <div>6am to 12pm</div>
                     </div >
-                    <div className="bdy">
+                    <div className="bdy" onClick={After12pm_Before6PMAT}>
                         <input type="checkbox" className="inp1"/><img className="imgs" src="https://cdn.onlinewebfonts.com/svg/img_168368.png" alt="" /> <div>12pm to 6pm</div>
                     </div >
-                    <div className="bdy">
+                    <div className="bdy" onClick={After6PM_Before12AmAT}>
                         <input type="checkbox" className="inp1"/><img className="imgs" src="https://cdn.onlinewebfonts.com/svg/img_447445.png" alt="" /> <div>After 6pm</div>
                     </div>
                 </div>
