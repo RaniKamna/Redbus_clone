@@ -33,14 +33,15 @@ console.log(busId);
 
 
 const BuyTicket = async () => {
-    await fetch(`http://localhost:2233/booking/update/${busId}`, {
-        method : "PATCH",
+    // await fetch(`http://localhost:2233/booking/update/${busId}`, {
+    //     method : "PATCH",
        
-        body: JSON.stringify(formData),
-        headers : {
-            'Content-Type' : "application/json"
-        }
-    });
+    //     body: JSON.stringify(formData),
+    //     headers : {
+    //         'Content-Type' : "application/json"
+    //     }
+    // });
+    console.log("This fetch work left")
 }
 
 
