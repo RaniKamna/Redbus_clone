@@ -1,8 +1,28 @@
 import styles from './showseat.module.css';
 import {useState, useEffect} from "react";
+import {Passenger} from "../Passengerdetail/Passenger";
+
+
+
+
+// //implementing sidebar 
+// import {
+  
+//     Grid,
+    
+//     Menu,
+    
+//     Sidebar
+//   } from "semantic-ui-react";
+
+// import React from "react";
+
+
 
 export const Showseat = ({bus}) => {
     
+    // const [visible, setVisible] = React.useState(false);
+
 
     const [selectedSeat, setSelectedSeat] = useState({})
     const [condition, setCondition] = useState(false);
@@ -210,11 +230,15 @@ export const Showseat = ({bus}) => {
 
                                         <div>
 
-                                            <button style = {{width: "400px", color: "white", fontSize : "24px", textAlign : "center", backgroundColor: "tomato"}}>PROCEED TO BOOK</button>
+                                            <button  style = {{width: "400px", color: "white", fontSize : "24px", textAlign : "center", backgroundColor: "tomato"}}>PROCEED TO BOOK</button>
+                                        </div>
+                                        <div>
+                                        
                                         </div>
 
                                     </div>
                                  </div>
+                                 
                             ) : (
                                 <>
                                 <div style={{ marginTop: '10px' }}>
