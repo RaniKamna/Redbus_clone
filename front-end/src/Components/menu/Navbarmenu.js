@@ -6,7 +6,7 @@ import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 import "./Navbarmenu.css";
 // import {SignInwithGoogle} from '../../firebase';
 // import { firebase } from '../../firebase.js';
-
+import {FaUserCircle} from "react-icons/fa";
 const Navbarmenu = () => {
 
     const Redirect = async () =>
@@ -87,8 +87,8 @@ const Navbarmenu = () => {
                             <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Email/SMS </NavLink> </li>
                         </ul>
                     </li>
-
-                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#">user<FiChevronDown /> </Link>
+                    <li className="userprofilelogo"><FaUserCircle/></li>
+                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#" ><FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')} > 
                             <li><NavLink onClick={Redirect} activeClassName='is-active' to={''}> Sign In/Sign Up </NavLink> </li>
                         </ul>
@@ -107,3 +107,4 @@ const Navbarmenu = () => {
 }
 
 export default Navbarmenu
+{/* <img className="userprofilelogo" src="https://freesvg.org/img/abstract-user-flat-1.png" alt="logo" /> */}

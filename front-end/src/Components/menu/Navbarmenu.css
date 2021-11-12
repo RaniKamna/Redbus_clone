@@ -67,6 +67,18 @@ body{
 /* .is-active {
   color: #ff5800!important;
 } */
+.userprofilelogo{
+  width: 20px;
+  height: 60px;
+  color: #ffff;
+  margin-top: 39px;
+   margin-left: 21px;
+
+}
+.userprofilelogo>svg{
+  width: 30px;
+  height: 30px;
+}
 
 .navBar .col-md-3 {
   z-index: 7;
