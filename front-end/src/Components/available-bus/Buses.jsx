@@ -201,7 +201,7 @@ function Buses() {
      var arr =   buses.filter((item)=>(
             item.pick_up_time <= 6
         ))
-        setBuses(arr.item)
+        setBuses(arr)
        }
  console.log("ready:",buses)
 
