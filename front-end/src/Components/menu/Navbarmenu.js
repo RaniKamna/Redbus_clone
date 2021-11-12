@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import logo from '../../img/logo.jpg';
+// import logo from '../../img/logo.jpg';
 import "./Navbarmenu.css";
 // import {SignInwithGoogle} from '../../firebase';
 // import { firebase } from '../../firebase.js';
@@ -50,7 +50,7 @@ const Navbarmenu = () => {
                 {/* Add Logo  */}
                 <div className="header__middle__logo">
                     <NavLink exact activeClassName='is-active' to="/">
-                        <img className="NavBarLogoimg" src={logo} alt="logo" /> 
+                        <img className="NavBarLogoimg" src="https://www.redbus.in/i/59538b35953097248522a65b4b79650e.png" alt="logo" /> 
                     </NavLink>
                 </div>
 
