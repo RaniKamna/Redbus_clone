@@ -1,4 +1,10 @@
 import styles from './showseat.module.css';
+import Drawer from "@material-ui/core/Drawer";
+import React from "react";
+
+
+
+
 import {useState, useEffect} from "react";
 import {Passenger} from "../Passengerdetail/Passenger";
 
@@ -6,22 +12,26 @@ import {Passenger} from "../Passengerdetail/Passenger";
 
 
 // //implementing sidebar 
-// import {
-  
-//     Grid,
-    
-//     Menu,
-    
-//     Sidebar
-//   } from "semantic-ui-react";
 
-// import React from "react";
+
 
 
 
 export const Showseat = ({bus}) => {
     
-    // const [visible, setVisible] = React.useState(false);
+    //implement siderbar 
+
+
+    const [formDrawerState, setformDrawerState] = React.useState(false);
+    const toggleDrawer = (open) => (event) => {
+        if(event.type === "keydown" && (event.key === "Tab" || event.key === "shift")) {
+            return;
+        }
+        setformDrawerState(open);
+    }
+
+
+
 
 
     const [selectedSeat, setSelectedSeat] = useState({})
@@ -230,10 +240,14 @@ export const Showseat = ({bus}) => {
 
                                         <div>
 
-                                            <button  style = {{width: "400px", color: "white", fontSize : "24px", textAlign : "center", backgroundColor: "tomato"}}>PROCEED TO BOOK</button>
+                                            <button onClick = {toggleDrawer("right", true)}  style = {{width: "400px", color: "white", fontSize : "24px", textAlign : "center", backgroundColor: "tomato"}}>PROCEED TO BOOK</button>
                                         </div>
                                         <div>
-                                        
+                                                <Drawer anchor = "right" open = {formDrawerState} onClose={toggleDrawer(false)}>
+                                                    <div style = {{width: "700px"}}>
+                                                        <Passenger busId = {bus._id} price = {bus.price * seat.length} Seat = {seat}></Passenger>
+                                                    </div>
+                                                </Drawer>
                                         </div>
 
                                     </div>
