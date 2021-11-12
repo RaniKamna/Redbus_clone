@@ -2,11 +2,11 @@ import React,{useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import logo from '../../img/logo.jpg';
+// import logo from '../../img/logo.jpg';
 import "./Navbarmenu.css";
 // import {SignInwithGoogle} from '../../firebase';
 // import { firebase } from '../../firebase.js';
-
+import {FaUserCircle} from "react-icons/fa";
 const Navbarmenu = () => {
 
     const Redirect = async () =>
@@ -50,14 +50,14 @@ const Navbarmenu = () => {
                 {/* Add Logo  */}
                 <div className="header__middle__logo">
                     <NavLink exact activeClassName='is-active' to="/">
-                        <img className="NavBarLogoimg" src={logo} alt="logo" /> 
+                        <img className="NavBarLogoimg" src="https://www.redbus.in/i/59538b35953097248522a65b4b79650e.png" alt="logo" /> 
                     </NavLink>
                 </div>
 
                 <div className="leftNav">
                     <ul>
                       <li className="li1"><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}><Link to = "/"> BUS TICKETS</Link></NavLink></li>
-                      <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}><Link to = "/rpool"> rPool</Link> </NavLink></li>
+                      <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}><Link to = "/rpool"> rPool  <sup>New</sup> </Link> </NavLink></li>
                       <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}><Link to = "/bushire"> BUS HIRE</Link> </NavLink></li>
                     </ul>
                 </div>
@@ -87,8 +87,8 @@ const Navbarmenu = () => {
                             <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Email/SMS </NavLink> </li>
                         </ul>
                     </li>
-
-                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#">user<FiChevronDown /> </Link>
+                    <li className="userprofilelogo"><FaUserCircle/></li>
+                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#" ><FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')} > 
                             <li><NavLink onClick={Redirect} activeClassName='is-active' to={''}> Sign In/Sign Up </NavLink> </li>
                         </ul>
@@ -107,3 +107,4 @@ const Navbarmenu = () => {
 }
 
 export default Navbarmenu
+{/* <img className="userprofilelogo" src="https://freesvg.org/img/abstract-user-flat-1.png" alt="logo" /> */}

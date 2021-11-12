@@ -11,9 +11,9 @@ export const Banner = () => {
         /> */}
         <div className="BannerElements">
             <div className="BannerHeading">Bus Hire</div>
-            <div className="BannerSubHeading">
+            <div className="BannerSubHeadings">
                 Rent vehicle with a driver from
-                <br />
+                <br /> <br />
                 the best operators
             </div>
             <div className="SvgElements">

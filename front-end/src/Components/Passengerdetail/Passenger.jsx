@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import TextField from '@mui/material/TextField';
 
 
 const style = {
@@ -64,7 +65,7 @@ const onChangeValue = (event) => {
 }
 console.log(busId);
 
-
+// const [pay, setPay] = useState(true);
 const BuyTicket = async () => {
     // await fetch(`http://localhost:2233/booking/update/${busId}`, {
     //     method : "PATCH",
@@ -110,7 +111,7 @@ const BuyTicket = async () => {
                                         <div className={styles.namediv}>
                                             <div>
                                                 <label className={styles.namelbl}>Name
-                                                    <input name = {`name${e}`} onChange = {onChangeValue} className={styles.inpblock} type="text" placeholder='Name' />
+                                                    <input  name = {`name${e}`} onChange = {onChangeValue} className={styles.inpblock} type="text" placeholder='Name' />
                                                 </label>
                                             </div>
                                         </div>
@@ -142,7 +143,7 @@ const BuyTicket = async () => {
                                                 <div style={{ width: '100%', marginBottom: '0.8em' }}>
                                                     <div>
                                                         <label>Age
-                                                            <input onChange = {onChangeValue} type="text" name={`age${e}`} placeholder='age' className={styles.inpblock} />
+                                                            <input  onChange = {onChangeValue} type="text" name={`age${e}`} placeholder='age' className={styles.inpblock} />
                                                         </label>
                                                     </div>
                                                 </div>
@@ -166,7 +167,7 @@ const BuyTicket = async () => {
                             <div style={{ marginBottom: '0.8em' }}>
                                 <div>
                                     <label className={styles.namelbl}>Email ID
-                                        <input onChange = {onChangeValue} type="text" placeholder='Email ID' name = "email" className={styles.inpblock} /></label>
+                                        <input  onChange = {onChangeValue} type="text" placeholder='Email ID' name = "email" className={styles.inpblock} /></label>
                                 </div>
                             </div>
                             <div style={{ marginBottom: '0.8em' }}>
@@ -175,7 +176,7 @@ const BuyTicket = async () => {
                                     <div className={styles.nusel}>
                                         +91
                                     </div>
-                                    <input type="text" onChange={onChangeValue} name = "phone" className={styles.inpblock} placeholder='Phone' />
+                                    <input type="text" onChange={onChangeValue}  name = "phone" className={styles.inpblock} placeholder='Phone' />
                                 </div>
                             </div>
                         </div>
@@ -195,14 +196,15 @@ const BuyTicket = async () => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box sx={style}>
+                <Box component="form" sx={style}>
+                    
                 <Typography id="modal-modal-title" variant="h6" component="h2">
                     <div><h1>Payment method</h1></div>
                     <h3 style = {{marginTop: "-20px"}}>Pay with google pay<span style = {{marginLeft : "40px", borderRadius: "50%", marginTop: "20px"}}><img style = {{marginTop: "40px", width: "40px", height: "35px"}} src = "https://img.icons8.com/color/2x/google-pay-india.png" alt = "" /></span></h3>
                 </Typography>
                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                     <div>
-                    <input style = {{width: "400px", height: "50px", fontSize: "25px"}} type = "text" placeholder = "Enter the phone number" />
+                    <input value = {formData.phone} style = {{width: "400px", height: "50px", fontSize: "25px"}} type = "text" placeholder = "Enter the phone number" />
                 <Link style = {{fontSize: "26px", fontWeight: "bold", color: "white"}} to = "/"><button style = {{marginTop: "30px", width: "400px", height: "50px"}}>pay now & Go to home page</button></Link>
                     
                     </div>
