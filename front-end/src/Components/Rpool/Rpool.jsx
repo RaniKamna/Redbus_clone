@@ -19,7 +19,7 @@ export const Rpool = () => {
             <Info3 />
             <Info4 />
             <Info5 />
-            <FooterR />
+            {/* <FooterR /> */}
         </div>
     )
 }
