@@ -18,9 +18,9 @@ return(
     {/* Add Menu Component */}
         <Navbarmenu />
     <Switch> 
-        <Route exact path="/" component={LandingPage}/>
-         <Route path="/rpool" component={Rpool}/>
-         <Route path = "/bushire" component = {Bushire} />
+        <Route exact path="/"/>
+         <Route path="/rpool" />
+         <Route path = "/bushire" />
         {/*<Route path="/Online" component={Online}/>
         <Route path="/Offline" component={Offline}/>
         <Route path="/Contact" component={Contact}/> */}
