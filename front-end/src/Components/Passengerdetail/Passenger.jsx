@@ -1,6 +1,54 @@
 import styles from './passenger.module.css';
 
-export const Passenger = () => {
+import {useState} from "react";
+import {Link} from "react-router-dom";
+
+export const Passenger = ({Seat, price, busId}) => {
+   
+  
+  
+
+
+const [formData, setFormData] = useState({});
+
+
+
+const onChangeValue = (event) => {
+    let name = event.target.name;
+    let value = event.target.value;
+
+
+    // passenger_details[name] = value;
+   
+    // for (let x in passenger_details) {
+    //     if(passenger_details[x] !== "") {
+    //         ticket.passenger.push(passenger_details);
+    //     }
+    // }
+    
+    setFormData({...formData, [name] : value});
+    
+}
+console.log(busId);
+
+
+const BuyTicket = async () => {
+    // await fetch(`http://localhost:2233/booking/update/${busId}`, {
+    //     method : "PATCH",
+       
+    //     body: JSON.stringify(formData),
+    //     headers : {
+    //         'Content-Type' : "application/json"
+    //     }
+    // });
+    console.log("This fetch work left")
+}
+
+
+
+
+
+
     return (
         <div className={styles.main_container}>
             <div>
@@ -14,18 +62,22 @@ export const Passenger = () => {
                             <i class="icon-profileIcon fl"></i>
                             <span className={styles.title}>Passenger Information</span>
                         </div>
+                        {
+                            Seat.map((e) => 
+                                
+                         
                         <div className={styles.pasdet}>
                             <div>
                                 <div className={styles.detail1}>
                                     <div className={styles.passeat}>
-                                        <span className={styles.pass1}>Passenger 1</span>
-                                        <span className={styles.seats}>Seat D</span>
+                                        <span className={styles.pass1}>Passenger Details</span>
+                                        <span className={styles.seats}>{e}</span>
                                     </div>
                                     <div>
                                         <div className={styles.namediv}>
                                             <div>
                                                 <label className={styles.namelbl}>Name
-                                                    <input className={styles.inpblock} type="text" placeholder='Name' />
+                                                    <input name = {`name${e}`} onChange = {onChangeValue} className={styles.inpblock} type="text" placeholder='Name' />
                                                 </label>
                                             </div>
                                         </div>
@@ -38,14 +90,14 @@ export const Passenger = () => {
                                                             <span>
                                                                 <div style={{ position: 'relative' }}>
                                                                     <div className={styles.male}></div>
-                                                                    <input type="radio" name="gendermale" value='male' className={styles.malebx} />
+                                                                    <input onChange = {onChangeValue} type="radio" name={`gender${e}`}value='male' className={styles.malebx} />
                                                                     <label className={styles.malelabel}>Male</label>
                                                                 </div>
                                                             </span>
                                                             <span>
                                                                 <div style={{ float: 'left', position: 'relative' }}>
                                                                     <div className={styles.female}></div>
-                                                                    <input type="radio" name="genderfemale" value='female' className={styles.femalebx} />
+                                                                    <input onChange = {onChangeValue} type="radio" name={`gender${e}`} value='female' className={styles.femalebx} />
                                                                     <label className={styles.malelabel}>Female</label>
                                                                 </div>
                                                             </span>
@@ -57,7 +109,7 @@ export const Passenger = () => {
                                                 <div style={{ width: '100%', marginBottom: '0.8em' }}>
                                                     <div>
                                                         <label>Age
-                                                            <input type="text" name='age' placeholder='age' className={styles.inpblock} />
+                                                            <input onChange = {onChangeValue} type="text" name={`age${e}`} placeholder='age' className={styles.inpblock} />
                                                         </label>
                                                     </div>
                                                 </div>
@@ -67,6 +119,8 @@ export const Passenger = () => {
                                 </div>
                             </div>
                         </div>
+                           )
+                        }
                     </div>
                 </div>
                 <div>
@@ -79,7 +133,7 @@ export const Passenger = () => {
                             <div style={{ marginBottom: '0.8em' }}>
                                 <div>
                                     <label className={styles.namelbl}>Email ID
-                                        <input type="text" placeholder='Email ID' className={styles.inpblock} /></label>
+                                        <input onChange = {onChangeValue} type="text" placeholder='Email ID' name = "email" className={styles.inpblock} /></label>
                                 </div>
                             </div>
                             <div style={{ marginBottom: '0.8em' }}>
@@ -88,12 +142,18 @@ export const Passenger = () => {
                                     <div className={styles.nusel}>
                                         +91
                                     </div>
-                                    <input type="text" className={styles.inpblock} placeholder='Phone' />
+                                    <input type="text" onChange={onChangeValue} name = "phone" className={styles.inpblock} placeholder='Phone' />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <h2>total price : {price} </h2>
+                <Link to = "/">
+                    <button onClick = {BuyTicket} style = {{margin: "auto", width: "400px", height: "50px", marginLeft: "200px", backgroundColor:"tomato", fontSize: "25px", fontWeight: "bold", color: "white"}}>buy ticket</button>
+                </Link>
             </div>
         </div>
     )
