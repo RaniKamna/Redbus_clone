@@ -13,6 +13,7 @@ import {Footer} from '../Footer/Footer'
 // import { FaCity } from "react-icons/fa"
 const LandingPage = () => {
 
+  
   return (
     <div>
       {/* <Allrouter/> */}
