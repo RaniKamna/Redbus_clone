@@ -17,9 +17,12 @@
     font-weight: bold;
 }
 .bdy{
-    color: #3e3e52;
+    /* color: #3e3e52; */
     font-size: 15px;
 
+}
+#abb{
+    color: #3e3e52;
 }
 .imgs{
     width: 8%;

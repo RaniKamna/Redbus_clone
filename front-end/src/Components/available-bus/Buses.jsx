@@ -173,7 +173,60 @@ function Buses() {
         "nonac": false,
         "travel_name": "Fexi Ticket National travels.",
         "__v": 0
-    }]
+    },
+    {
+        "_id": "618d192d3ddf348b056907cf",
+        "bus_name": "Pavan Benz A/C Sleeper(2 + 2)",
+        "pick_up_time": 18.1,
+        "duration": 21,
+        "drop_time": 24.3,
+        "rating": 3.9,
+        "price": 15240,
+        "seats_available": 34,
+        "seat_type": "single",
+        "pickup_address": "bangalore",
+        "drop_address": "mumbai",
+        "passengers": [],
+        "seater":true,
+        "sleeper": false,
+        "ac": false,
+        "nonac": false,
+        "travel_name": "Fexi Ticket National travels.",
+        "wifi":false,
+        "waterbottle":true,
+        "charging_point":false,
+        "Blankets":true,
+        "Movie":false,
+        "toilet":true,
+        "__v": 0
+    },
+    {
+        "_id": "618d192d3ddf348b056907cf",
+        "bus_name": "Pavan Paapu RED A/C Sleeper(2 + 2)",
+        "pick_up_time": 5,
+        "duration": 21,
+        "drop_time": 18.3,
+        "rating": 3.9,
+        "price": 152400,
+        "seats_available": 34,
+        "seat_type": "single",
+        "pickup_address": "bangalore",
+        "drop_address": "mumbai",
+        "passengers": [],
+        "seater":true,
+        "sleeper": false,
+        "ac": false,
+        "nonac": false,
+        "travel_name": "Fexi Ticket National travels.",
+        "wifi":true,
+        "waterbottle":false,
+        "charging_point":true,
+        "Blankets":false,
+        "Movie":true,
+        "toilet":false,
+        "__v": 0
+    }
+]
 
     const [buses, setBuses] = useState(All_bus);
     
@@ -200,14 +253,17 @@ function Buses() {
     var original=All_bus;
 
     //DEPARTURE TIME
+    const [Before6am,setBefore6am]=useState(false)
     const Before6AM= () => {
        original=All_bus
      var arr =   original.filter((item)=>(
             item.pick_up_time <= 6
-         
         ))
-        console.log("ready:",buses)
+    //   var x=document.getElementById("a");
+    //   x.style.color="red"
+       
         setBuses(arr)
+        setBefore6am(!Before6am)
        }
        const After6Am_Before12PM= () => {
             original=All_bus
@@ -277,7 +333,7 @@ function Buses() {
                const Seater= () => {
                 original=All_bus
             var arr =   original.filter((item)=>(
-                   item.drop_time>18 &&   item.drop_time<=24
+                   item.seater===true
                ))
                console.log("ready:",buses)
                setBuses(arr)
@@ -302,6 +358,57 @@ function Buses() {
                 original=All_bus
             var arr =   original.filter((item)=>(
                    item.nonac === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+
+//AMENITIES
+
+              const WIFI= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.wifi === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const WATER= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.waterbottle === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const BLANKET= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.Blankets === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const CHARGER= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.charging_point === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const MOVIE= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.Movie === true
+               ))
+               console.log("ready:",buses)
+               setBuses(arr)
+              }
+              const TOILET= () => {
+                original=All_bus
+            var arr =   original.filter((item)=>(
+                   item.toilet === true
                ))
                console.log("ready:",buses)
                setBuses(arr)
@@ -359,8 +466,14 @@ function Buses() {
 
                 <div className="inp"> 
                     <div className="head">DEPARTURE TIME</div>
-                    <div className="bdy" onClick={Before6AM}>
-                        <input type="checkbox" className="inp1" /> <img className="imgs" src="https://freepngimg.com/download/alarm/22921-5-morning-alarm-image.png" alt="" /> <div  >  Before 6am</div>
+                    <div className="bdy" id="a" onClick={Before6AM} >
+                        {Before6am?(
+                           <div>
+                           <input type="checkbox" className="inp1" /> <img className="imgs" src="https://freepngimg.com/download/alarm/22921-5-morning-alarm-image.png" alt="" /> <div style={{color:"red"}}>  Before 6am</div>
+                       </div> ):(<div>
+                            <input type="checkbox" className="inp1" /> <img className="imgs" src="https://freepngimg.com/download/alarm/22921-5-morning-alarm-image.png" alt="" /> <div id="abb">  Before 6am</div>
+                       </div> )}
+                        
                     </div>
                     <div className="bdy" onClick={After6Am_Before12PM}>
                         <input type="checkbox" className="inp1"/><img className="imgs" src="https://th.bing.com/th/id/R.7753f50f02196a8547d206dc00a485fd?rik=kDj3UsII659w8Q&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_183081.png&ehk=PgJb3%2f9xAwPor0E4QcelZk76VKx%2bAJYgz%2bzePpOi5og%3d&risl=&pid=ImgRaw&r=0" alt="" /> <div>6am to 12pm</div>
@@ -377,7 +490,7 @@ function Buses() {
 
                 <div className="inp">
                     <div className="head">BUS TYPES</div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={Seater}>
                         <input type="checkbox" className="inp1" /><div>SEATER</div>
                     </div>
                     <div className="bdy" onClick={Sleeper}>
@@ -428,19 +541,19 @@ function Buses() {
                 <div className="inp">
                     <div className="head">AMENITIES</div>
 
-                    <div className="bdy">
+                    <div className="bdy"onClick={WIFI} >
                         <div> <img className="imgs" src="https://static.vecteezy.com/system/resources/previews/000/441/701/original/wifi-vector-icon.jpg" alt="" />   WIFI</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy"onClick={WATER}>
                         <div><img className="imgs" src="https://maxcdn.icons8.com/Share/icon/Food/bottle_of_water1600.png" alt="" />   Water Bottle</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy"onClick={BLANKET}>
                         <div><img className="imgs" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/blanket-7-582299.png" alt="" />   Blankets</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy"onClick={CHARGER}>
                         <div><img className="imgs" src="https://th.bing.com/th/id/OIP.gfFdPhqu7WhbcXlx2LaCzQHaHa?pid=ImgDet&rs=1" alt="" />   Charging Point</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy"onClick={MOVIE}>
                         <div><img className="imgs" src="https://th.bing.com/th/id/OIP.FX2D4IYJXj70rMJhiIy7hQHaHa?pid=ImgDet&rs=1" alt="" /> Movie</div>
                     </div>
                     <div className="bdy">
@@ -449,7 +562,7 @@ function Buses() {
                     <div className="bdy">
                         <div> <img className="imgs" src="https://image.flaticon.com/icons/png/512/124/124992.png" alt="" />   Emergrncy Contact Number</div>
                     </div>
-                    <div className="bdy">
+                    <div className="bdy" onClick={TOILET}>
                         <div> <img className="imgs" src="https://img.favpng.com/18/5/15/public-toilet-icon-png-favpng-JBDLZqNXHRjuC2gDzkVZhAMU0.jpg" alt="" />    Toilet</div>
                     </div>
                 </div>
