@@ -452,11 +452,13 @@ function Buses() {
     const Available_bus_container = styled.div`
         // border: 1px solid black;
         width: 100%;
+        // height: 100%;
         // display: grid;
         display: flex;
         grid-gap: 20px;
         flex-wrap: wrap;
         margin-top: 20px;
+        top: 0;
     `
     const Sort_div = styled.div`
         width: 100%;
@@ -630,11 +632,13 @@ function Buses() {
                     <div>Fare</div>
                     <div>Seats available</div>
                 </Sort_div>
+                <div style = {{margin: "5px", display: "grid", width: "100%", top: "0"}}>
                 {
                     buses.map((e) => (
                         <OneBus key={e._id} data={e}></OneBus>
                     ))
                 }
+                </div>
 
             </Available_bus_container>
 

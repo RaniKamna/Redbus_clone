@@ -24,8 +24,9 @@ function OneBus ({data}) {
     //       nonac : false
     //   }
     const Main_container = styled.div`
+        top: 0;
         width: 100%;
-        // height: 200px;
+        height: 200px;
         border: 1px solid gray;
         display: grid;
         // grid-template-rows: 80% 20%;
