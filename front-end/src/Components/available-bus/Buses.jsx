@@ -453,6 +453,7 @@ function Buses() {
         grid-gap: 20px;
         flex-wrap: wrap;
         margin-top: 20px;
+        top: 0;
     `
     const Sort_div = styled.div`
         width: 100%;
@@ -650,11 +651,13 @@ else{
                     <div>Fare</div>
                     <div>Seats available</div>
                 </Sort_div>
+                <div style = {{margin: "5px", display: "grid",gridGap: "5px", width: "100%", top: "0"}}>
                 {
                     buses.map((e) => (
                         <OneBus key={e._id} data={e}></OneBus>
                     ))
                 }
+                </div>
 
             </Available_bus_container>
 

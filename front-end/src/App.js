@@ -32,6 +32,13 @@ import {Footer} from "./Components/Footer/Footer";
 
 
 
+//payment ticket
+
+import {Ticket} from "./Components/ticketPay/TicketPayment";
+
+
+
+
 function App() {
 const [car, setCar] = useState([]);
 const [bus, setBus] = useState([]);
@@ -67,6 +74,10 @@ useEffect(() => {
   // console.log(bus, car,)
   console.log("check" , buss);
 }, [])
+
+
+///This is the all bus 
+
 
 
 
@@ -110,6 +121,9 @@ useEffect(() => {
                 <SearchBuses />
 
               </Route>
+              {/* <Route path = "/ticketPay">
+                <Ticket />
+              </Route> */}
 
 
 
