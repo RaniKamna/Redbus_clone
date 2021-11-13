@@ -33,8 +33,6 @@ The Application Runs on localhost:3000
   - @material-ui/core
   - axios
   - bootstrap
-  - react
-  - react-dom
   - react-elastic-carousel
   - react-icons
   - react-sidebar
