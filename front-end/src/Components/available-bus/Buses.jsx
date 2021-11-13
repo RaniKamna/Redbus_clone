@@ -632,7 +632,7 @@ function Buses() {
                     <div>Fare</div>
                     <div>Seats available</div>
                 </Sort_div>
-                <div style = {{margin: "5px", display: "grid", width: "100%", top: "0"}}>
+                <div style = {{margin: "5px", display: "grid",gridGap: "5px", width: "100%", top: "0"}}>
                 {
                     buses.map((e) => (
                         <OneBus key={e._id} data={e}></OneBus>
