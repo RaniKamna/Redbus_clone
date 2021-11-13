@@ -47,16 +47,6 @@
  font-family: Montserrat;
 }
 
-/* .type_search{
-  background-color: #d84f57;
-  color: white;
-  width: 100%;
-  padding: 5px;
-  height: 40px;
-  font-size: 20px;
-  font-family: sans-serif;
-
-} */
 
 .div {
   width: 35%;
@@ -118,9 +108,9 @@
  
 }
 
-.prompt {
+.prompt_a {
   float: left;
-  margin-top: 1%;
+  margin-top: 4.5%;
   margin-left: 4%;
   
 }
@@ -1063,7 +1053,7 @@ grid-gap: 0.5%;
 }
 
 .name {
-  height: 300ppx;
+  height: 350px;
   margin: auto;
   width: 100%;
 }
@@ -1079,16 +1069,18 @@ grid-gap: 0.5%;
 
 .num {
   display: grid;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: 25% 25% 25%;
   grid-gap: 5%;
+  margin-left: 10%;
  
 }
 .num1{
-  /* margin-left: 16%; */
+  margin-left: 5%; 
   margin-top: 2%;
-  text-align: center;
+  /* text-align: center; */
   font-family: Montserrat;
-  font-size: 13px;
+  font-size: 15px;
+  text-align: center;
   color: #737373;
 }
 
@@ -1096,10 +1088,11 @@ grid-gap: 0.5%;
 
 .cnt {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   color: red;
   opacity: 8;
   font-family: Montserrat;
+  margin-left: 42%;
 }
 
 .bckgrd {
@@ -1126,30 +1119,33 @@ grid-gap: 0.5%;
   text-align: left;
 }
 
-.left p {
+.left  {
   text-align: left;
   font-size: 15px;
 }
 
-.bushead p {
+.bushead  {
   font-size: 15px;
   font-weight: bolder;
-  color: black;
+  color: #444343;
   text-align: left;
 }
 
-.mrgn p {
-  margin-left: 10%;
-  font-size: 15px;
-  text-align: left;
-  line-height: 20px;
-  font-family: Montserrat;
-  color: #737373;
-  line-height: 1.6;
+.mrgn  {
+
+ 
+  
 }
 .hr{
   width: 90%;
   margin-left: 10%;
-
-
+}
+.mrgn1{
+  font-family: Montserrat;
+  color: #737373;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-left: 10%;
+ 
+  text-align: left;
 }

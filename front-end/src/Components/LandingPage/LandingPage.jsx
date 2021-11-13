@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 import styles from "./LandingPage.module.css"
 import Break from "./Break.jsx";
 import { Route, Switch, Link } from 'react-router-dom';
@@ -7,100 +7,38 @@ import { SearchBuses } from "./SearchBuses";
 import {Footer} from '../Footer/Footer'
 import "../available-bus/Buses"
 import { place } from "./fetch";
-import { Axios } from "axios";
+import { axios } from "axios";
+import { Form } from "./Form";
+import styled from "styled-components";
 
 
 
 
 
-// import { FaCity } from "react-icons/fa"
+
 const LandingPage = () => {
-  const [state, setState] = useState( {
-    from: "",
-    to: ""
-  })
 
-  //class Post extends Component {
-    // state = {
-    //   from: "",
-    //   to: ""
-    // };
+  const [placeList, setPlaceList] = useState([]);
+
+
+     
+    const handleAddForm = (place) => {
+        setPlaceList([...placeList, place])
+    }
+   
   
-   const onTitleChange = e => {
-      setState({
-        from: e.target.value
-      });
-    };
-  
-    const onBodyChange = e => {
-      setState({
-        to: e.target.value
-      });
-    };
-   const  handleSubmit = async (e) => {
-      e.preventDefault();
-      await place.post( "/",{
-        from: e.target.value,
-        to: e.target.value
-      })
-    //   const data= {
-    //     from: state.from,
-    //     to: state.to
-    //   };
-    //   Axios
-    //     .post("http://localhost:3001/places", data)
-    //     .then(res => console.log(res))
-    //     .catch(err => console.log(err));
-     }
-
-
   return (
     <div>
-      {/* <Allrouter/> */}
+    
      
       <div className={styles.welcome_image}>
-      <form onSubmit={handleSubmit}>
-        <div className={styles.total_form}>
-          <div className={styles.type_from}>
-            <input
-              type="text"
-              placeholder="FROM"
-              value={state.from}
-              onChange={onTitleChange} required
-              
-              //onChange={}
-            />
-          </div>
-          <div className={styles.type_to}>
-            <input
-              type="text"
-              placeholder="TO"
-              value={state.to}
-            onChange={onBodyChange} required
-            />
-          </div>
+        <Form handleAddForm={handleAddForm}></Form>
 
-          <div className={styles.type_date}>
-            <input
-              type="date"
-              placeholder="DATE"
-              name="date"
-              value={state.date}
-               />
-          </div>
-  
-          <div >
-          
-            <Link to='/available_bus' >
-            <button type="submit" className={styles.link} >Search Buses</button>
-            </Link>
-          </div>
-        </div>
-        </form>
+        
         
         <div className={styles.natak}>
           <img src="https://st.redbus.in/Images/natak/100x100.png" alt="img" />
-          <div className={styles.prompt}>  <div className={styles.prompt1}>SAVE THE DRAMA FOR THE STAGE!</div> <div className={styles.prompt2}>Book your favourite seat online with redBus.</div> </div>
+          <div className={styles.prompt_a}>  <div className={styles.prompt1}>SAVE THE DRAMA FOR THE STAGE!</div> <div className={styles.prompt2}>Book your favourite seat online with redBus.</div> </div>
         </div>
       </div>
      
@@ -387,7 +325,7 @@ const LandingPage = () => {
         <hr className={styles.hr}></hr>
         <div className={styles.mrgn}>
           <p className={styles.bushead} >Top Operators</p>
-          <p>SRS Travels | Evacay Bus | Kallada Travels | KPN Travels | Orange Travels | Parveen Travels | Rajdhani Express | VRL Travels
+          <p className={styles.mrgn1}>SRS Travels | Evacay Bus | Kallada Travels | KPN Travels | Orange Travels | Parveen Travels | Rajdhani Express | VRL Travels
             | Chartered Speed Bus | Bengal Tiger | SRM Travels | Infant Jesus | Patel Travels | JBT Travels | Shatabdi Travels
             | Eagle Travels |Kanker Roadways | Komitla | Sri Krishna Travel | Humsafar Travels | Mahasagar Travels | |Raj Express |
             Sharma Travels | Shrinath Travels | Universal Travles | Verma Travel | Gujarat Travels | Madurai Radha Travels |
@@ -403,9 +341,9 @@ const LandingPage = () => {
 
     </div>
   )
-}
 
 
+  }
 
 
 

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { OneBus } from "./one-bus/OneBus";
 import "../LandingPage/searchBuses.css"
+import { Form } from "../LandingPage/Form";
+
+import { useLocation } from "react-router-dom";
 
 
 
@@ -102,9 +105,9 @@ function Buses() {
     {
         "_id": "618b69e223e97c3fcee6f2bc",
         "bus_name": "Bharat Benz A/C Sleeper(2 + 2)",
-        "pick_up_time": "17.00",
-        "duration": "21.00",
-        "drop_time": "13.30",
+        "pick_up_time": 17.00,
+        "duration": 21.00,
+        "drop_time": 13.30,
         "rating": 3.9,
         "price": 1524,
         "seats_available": 34,
@@ -121,9 +124,9 @@ function Buses() {
     {
         "_id": "618b6a2423e97c3fcee6f2be",
         "bus_name": "Bharat Benz A/C Sleeper(2 + 2)",
-        "pick_up_time": "14.10",
-        "duration": "21.00",
-        "drop_time": "11.30",
+        "pick_up_time":14.10,
+        "duration": 21.00,
+        "drop_time": 11.30,
         "rating": 3.9,
         "price": 1524,
         "seats_available": 34,
@@ -140,9 +143,9 @@ function Buses() {
     {
         "_id": "618bca61b4d9551885665441",
         "bus_name": "Bharat Benz A/C Sleeper(2 + 2)",
-        "pick_up_time": "14.10",
-        "duration": "21.00",
-        "drop_time": "11.30",
+        "pick_up_time": 14.10,
+        "duration": 21.00,
+        "drop_time": 11.30,
         "rating": 3.9,
         "price": 1524,
         "seats_available": 34,
@@ -229,29 +232,21 @@ function Buses() {
     }
     ]
 
-    const [buses, setBuses] = useState(All_bus);
-
-    //  const [loading, setLoading] = useState(true);
-    // const getBuses = () => {
-    //     // let res = await fetch("http://localhost:2233/booking/data");
-    //     // let busesa = await res.json();
-    //     setBuses(All_bus)
-
-    // }
+    let { search } = useLocation(); 
+    const query = new URLSearchParams(search);
+    const from = query.get("from");
+    const to = query.get("to");
+    var BUS_JS=All_bus.filter((item) => (
+        from===item.pickup_address || to===item.drop_address
+     ))
 
 
-    // useEffect(() => {
-    //     getBuses();
-    //     console.log(buses);
-    //     // setLoading(false);
-    // }, []);
-    // console.log(buses);
-    // if(buses.length !== 0) {
-    //     setLoading(false)
-    // } else {
-    //     setLoading(true);
-    // }
-    var original = All_bus;
+    const [buses, setBuses] = useState(BUS_JS)
+
+    var original = BUS_JS  ;
+
+    
+
 
     //DEPARTURE TIME
     const [Before6am, setBefore6am] = useState(false)
@@ -266,7 +261,7 @@ function Buses() {
     const [Toilet,setToilet] =useState(false);
 
     const Before6AM = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.pick_up_time <= 6
         ))
@@ -276,7 +271,7 @@ function Buses() {
         setBefore6am(!Before6am)
     }
     const After6Am_Before12PM = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.pick_up_time > 6 && item.pick_up_time <= 12
         ))
@@ -284,7 +279,7 @@ function Buses() {
         setBefore12pm(!Before12pm)
     }
     const After12pm_Before6PM = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.pick_up_time > 12 && item.pick_up_time <= 18
         ))
@@ -293,7 +288,7 @@ function Buses() {
         setBefore6pm(!Before6pm)
     }
     const After6PM_Before12Am = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.pick_up_time > 18 && item.pick_up_time <= 24
         ))
@@ -305,7 +300,7 @@ function Buses() {
     //ARRIVAL TIME
 
     const Before6AMAT = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.drop_time <= 6
 
@@ -314,7 +309,7 @@ function Buses() {
         setBefore6am(!Before6am)
     }
     const After6Am_Before12PMAT = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.drop_time > 6 && item.drop_time <= 12
         ))
@@ -323,7 +318,7 @@ function Buses() {
         setBefore12pm(!Before12pm)
     }
     const After12pm_Before6PMAT = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.drop_time > 12 && item.drop_time <= 18
         ))
@@ -332,7 +327,7 @@ function Buses() {
         setBefore6pm(!Before6pm)
     }
     const After6PM_Before12AmAT = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.drop_time > 18 && item.drop_time <= 24
         ))
@@ -345,7 +340,7 @@ function Buses() {
     //BUS_TYPES
 
     const Seater = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.seater === true
         ))
@@ -353,7 +348,7 @@ function Buses() {
         setBuses(arr)
     }
     const Sleeper = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.sleeper === true
         ))
@@ -361,7 +356,7 @@ function Buses() {
         setBuses(arr)
     }
     const AC = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.ac === true
         ))
@@ -369,7 +364,7 @@ function Buses() {
         setBuses(arr)
     }
     const NonAc = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.nonac === true
         ))
@@ -380,7 +375,7 @@ function Buses() {
     //AMENITIES
 
     const WIFI = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.wifi === true
         ))
@@ -389,7 +384,7 @@ function Buses() {
         setWifi(!Wifi)
     }
     const WATER = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.waterbottle === true
         ))
@@ -398,7 +393,7 @@ function Buses() {
         setBottle(!Bottle)
     }
     const BLANKET = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.Blankets === true
         ))
@@ -407,7 +402,7 @@ function Buses() {
         
     }
     const CHARGER = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.charging_point === true
         ))
@@ -416,7 +411,7 @@ function Buses() {
         setCharger(!Charger)
     }
     const MOVIE = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.Movie === true
         ))
@@ -425,7 +420,7 @@ function Buses() {
         setMovie(!Movie)
     }
     const TOILET = () => {
-        original = All_bus
+        original = BUS_JS
         var arr = original.filter((item) => (
             item.toilet === true
         ))
@@ -438,6 +433,7 @@ function Buses() {
 
     const Container = styled.div`
         width: 100%;
+        margin-top:6.5%;
         // height: 1000px;
         display: grid;
         grid-template-columns: 25% 70%;
@@ -452,6 +448,7 @@ function Buses() {
     const Available_bus_container = styled.div`
         // border: 1px solid black;
         width: 100%;
+        /* height: auto; */
         display: grid;
         grid-gap: 20px;
         flex-wrap: wrap;
@@ -464,10 +461,32 @@ function Buses() {
         display: grid;
         grid-template-columns: 18% 10% 10% 10% 10% 10% 10% 10%;
         grid-gap: 10px;
-`
+        `
+        if(BUS_JS.length===0){
+            return (
+
+                <>
+                <div className="assam">
+                <div>
+                <img className="oops_img" src="https://www.redbus.in/images/no_bus.png" alt="" /></div>
+                <div className="oops">
+                <h3>Oops! No buses found.</h3>
+                <p>No routes available</p>
+                </div>
+                
+                </div>
+                
+           
+            
+            </>
+            )
+
+        }
+else{
     return (
 
         <Container >
+             
             <Filter_container>
                 <div className="poora">
                     <div className="poora1">
@@ -617,8 +636,10 @@ function Buses() {
                     </div>
                 </div>
             </Filter_container>
+          
 
             <Available_bus_container>
+        
                 <Sort_div>
                     <div>{buses.length} Bus found</div>
                     <div style={{ fontWeight: "bold" }}>Sort by :</div>
@@ -640,6 +661,7 @@ function Buses() {
 
         </Container>
     )
+            }
 }
 
 export { Buses };
