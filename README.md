@@ -30,6 +30,9 @@ The Application Runs on localhost:3000
 - Express 
 
 ## Npm Package dependencies Used:
+
+### Frontend
+```bash 
   - @material-ui/core
   - axios
   - bootstrap
@@ -42,6 +45,19 @@ The Application Runs on localhost:3000
   - semantic-ui-react
   - styled-components
   - web-vitals
+ ```
+ ### BackEnd
+```bash 
+  - bcryptjs
+  - dotenv
+  - express
+  - jsonwebtoken
+  - mongoose
+  - passport
+  - passport-google-oauth2
+  - uuid
+ ```
+ 
  
  ## Screenshots
 
