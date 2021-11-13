@@ -30,6 +30,7 @@ The Application Runs on localhost:3000
 - Express 
 
 ## Npm Package dependencies Used:
+  - passport
   - @material-ui/core
   - axios
   - bootstrap
